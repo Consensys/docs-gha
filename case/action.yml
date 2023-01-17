@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'test: case'
+description: 'Composite action to test case of filenames'
+
+inputs:
+  DOC_DIR:
+    description: 'default directory path from project root'
+    required: false
+    default: .
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v3
+      with:
+        repository: ConsenSys/docs-gha
+        path: .docs-gha
+    - name: Check pages file name case
+      shell: sh
+      run: |
+        echo "Testing file case in ${{ inputs.DOC_DIR }}."
+        passed=true
+        for filename in `find ${{ inputs.DOC_DIR }} -name "*.md" | ( ! grep -P -v "^[[:lower:][:digit:]\/\-_]+\.md$" )`
+        do
+          echo "$filename"
+          echo "::error file=$filename ::File path must be only lowercase letters, digits, - (dash) and _ (underscore)"
+          passed=false
+        done;
+        if [ "$passed" = false ] ; then
+          echo "::error ::Some files path are incorrect. Check error annotations in the pull request."
+          echo "Correct example: my-folder/my-file-name_new2.md"
+          echo "Wrong example: My-Folder/MyFile-NAME.old.md"
+          exit 1
+        fi
+      env:
+        # Required, set by GitHub actions automatically:
+        # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
+        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+  

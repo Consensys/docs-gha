@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'test: lint all code'
+description: 'Composite action to lint all kind of files in doc'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v3
+      with:
+        repository: ConsenSys/docs-gha
+        path: .docs-gha
+
+    - name: Lint Code Base
+      uses: github/super-linter/slim@v4.10.0
+      env:
+        VALIDATE_ALL_CODEBASE: "false"
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+        LOG_LEVEL: ERROR
+        LINTER_RULES_PATH: ./.docs-gha/lint/config
+        MARKDOWN_CONFIG_FILE: markdown.yml
+        CSS_FILE_NAME: .stylelintrc.yaml
+        IGNORE_GENERATED_FILES: 'true'

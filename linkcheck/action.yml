@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'test: links'
+description: 'Composite action to validate links'
+
+inputs:
+  DOC_DIR:
+    description: 'default directory path from project root'
+    required: false
+    default: .
+  BRANCH:
+    description: 'default branch'
+    required: false
+    default: main
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v3
+      with:
+        repository: ConsenSys/docs-gha
+        path: .docs-gha
+
+    # use-quiet-mode: only show errors in output
+    # use-verbose-mode: show detailed HTTP status for checked links
+    - name: Test links
+      uses: gaurav-nelson/github-action-markdown-link-check@1.0.13
+      with:
+        use-quiet-mode: yes
+        use-verbose-mode: yes
+        check-modified-files-only: yes
+        config-file: ./.docs-gha/linkcheck/config/link-check.json
+        base-branch: ${{ inputs.BRANCH }}
+        folder-path: ${{ inputs.DOC_DIR }}
