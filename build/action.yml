@@ -1,34 +1,35 @@
 # SPDX-License-Identifier: Apache-2.0
 ---
-name: "Build doc"
-description: "Composite action to build doc site"
+name: 'build'
+description: 'Composite action to lint all kind of files in doc'
+
 inputs:
-  SITE_ROOT: #example "https://consensys.net/docs/doctools/"
-    description: "Hosting URL base, including project name. No lang. No version."
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
     required: true
-  LANGUAGE:
-    description: "doc language to build"
-    required: false
-    default: en
-  VERSION:
-    description: "doc version to build"
-    required: false
-    default: latest
 
 runs:
   using: "composite"
   steps:
-    - name: Build doc site
-      shell: sh
+    - name: Checkout tools repo
+      uses: actions/checkout@v3
+      with:
+        repository: ConsenSys/docs-gha
+        path: .docs-gha
+
+    - name: Read .nvmrc
+      shell: bash
+      run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+      id: nvm
+      
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        registry-url: https://registry.npmjs.org/      
+
+    - name: npm build
+      shell: bash
       run: |
-        docker run --rm \
-        -e SITE_ROOT="${{ inputs.SITE_ROOT }}" \
-        -e SITE_URL="${{ inputs.SITE_ROOT }}/${{ inputs.LANGUAGE }}/${{ inputs.VERSION }}/" \
-        -e VERSION="${{ inputs.VERSION }}" \
-        -e LANGUAGE="${{ inputs.LANGUAGE }}" \
-        -v ${PWD}:/workspace/ \
-        -w /workspace/ \
-        ghcr.io/consensys/doctools-builder:latest \
-        build -s \
-        -d build \
-        --config-file ${{ inputs.MKDOCS_CONFIG }}
+        npm ci
+        npm run build      
