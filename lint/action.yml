@@ -17,14 +17,20 @@ runs:
         repository: ConsenSys/docs-gha
         path: .docs-gha
 
-    - name: Lint Code Base
-      uses: github/super-linter/slim@v4.10.0
-      env:
-        VALIDATE_ALL_CODEBASE: "false"
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
-        LOG_LEVEL: ERROR
-        LINTER_RULES_PATH: ./.docs-gha/lint/config
-        MARKDOWN_CONFIG_FILE: markdown.yml
-        CSS_FILE_NAME: .stylelintrc.yaml
-        IGNORE_GENERATED_FILES: 'true'
+    - name: Read .nvmrc
+      shell: bash
+      run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+      id: nvm
+      
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        registry-url: https://registry.npmjs.org/      
+
+    - name: npm install, lint
+      shell: bash
+      run: |
+        npm ci
+        npm run lint
+        npm run typecheck        
