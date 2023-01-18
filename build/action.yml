@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 ---
 name: 'build'
-description: 'Composite action to lint all kind of files in doc'
+description: 'Composite action to build the docs'
 
 inputs:
   GITHUB_TOKEN:

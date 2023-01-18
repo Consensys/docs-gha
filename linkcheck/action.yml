@@ -7,7 +7,7 @@ inputs:
   DOC_DIR:
     description: 'default directory path from project root'
     required: false
-    default: ./docs
+    default: docs
   BRANCH:
     description: 'default branch'
     required: false

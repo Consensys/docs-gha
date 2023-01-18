@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 ---
-name: 'test: lint all code'
-description: 'Composite action to lint all kind of files'
+name: 'release to github'
+description: 'Composite action to release to github'
 
 inputs:
   GITHUB_TOKEN:
@@ -28,9 +28,15 @@ runs:
         node-version: 18
         registry-url: https://registry.npmjs.org/      
 
-    - name: npm install, lint
+    - name: npm build
       shell: bash
       run: |
         npm ci
-        npm run lint
-        npm run typecheck        
+        npm run build
+
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+        HUSKY: 0 # disable hooks for release
+      shell: bash        
+      run: npx semantic-release
