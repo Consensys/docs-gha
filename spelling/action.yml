@@ -17,10 +17,6 @@ runs:
         repository: ConsenSys/docs-gha
         path: .docs-gha
 
-    - name: list files
-      shell: bash
-      run: ls -la .
-
     - name: Vale
       uses: errata-ai/vale-action@v2.0.1
       with:
