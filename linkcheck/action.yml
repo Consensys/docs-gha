@@ -23,6 +23,7 @@ runs:
         path: .docs-gha
     - name: Remedy github workspace dubious error
       run: git config --global --add safe.directory /github/workspace
+      shell: bash
 
     # use-quiet-mode: only show errors in output
     # use-verbose-mode: show detailed HTTP status for checked links
