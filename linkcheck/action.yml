@@ -7,7 +7,7 @@ inputs:
   DOC_DIR:
     description: 'default directory path from project root'
     required: false
-    default: docs
+    default: .
   BRANCH:
     description: 'default branch'
     required: false
@@ -33,3 +33,4 @@ runs:
         config-file: ./.docs-gha/linkcheck/config/link-check.json
         base-branch: ${{ inputs.BRANCH }}
         folder-path: ${{ inputs.DOC_DIR }}
+        file-extension: .mdx
