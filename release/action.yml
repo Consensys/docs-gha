@@ -31,7 +31,7 @@ runs:
     - name: npm build
       shell: bash
       run: |
-        npm ci --only=production --ignore-scripts
+        npm ci --only=production
         npm run build
 
     - name: Release
