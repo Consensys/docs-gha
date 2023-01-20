@@ -7,7 +7,7 @@ inputs:
   DOC_DIR:
     description: 'default directory path from project root'
     required: false
-    default: docs
+    default: .
 
 runs:
   using: "composite"
@@ -24,7 +24,7 @@ runs:
         ls -la .
         echo "Testing file case in ${{ inputs.DOC_DIR }}."
         passed=true
-        for filename in `find ${{ inputs.DOC_DIR }} -name "*.md" | ( ! grep -P -v "^[[:lower:][:digit:]\/\-_]+\.md$" )`
+        for filename in `find ${{ inputs.DOC_DIR }} -name "*.md" -not -path "./node_modules/*" -o -name '*.mdx' -not -path "./node_modules/*"" | ( ! grep -P -v "^[[:lower:][:digit:]\/\-_]+\.mdx?$" )`
         do
           echo "$filename"
           echo "::error file=$filename ::File path must be only lowercase letters, digits, - (dash) and _ (underscore)"
