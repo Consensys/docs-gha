@@ -31,5 +31,5 @@ runs:
     - name: npm build
       shell: bash
       run: |
-        npm ci
+        npm ci --only=production --ignore-scripts
         npm run build      
