@@ -1,13 +1,16 @@
 # SPDX-License-Identifier: Apache-2.0
 ---
-name: 'test: case'
-description: 'Composite action to test case of filenames'
+name: "test: case"
+description: "Composite action to test case of filenames"
 
 inputs:
   DOC_DIR:
-    description: 'default directory path from project root'
+    description: "default directory path from project root"
     required: false
     default: docs
+  GITHUB_TOKEN:
+    description: "token to run with correct permissions"
+    required: true
 
 runs:
   using: "composite"
@@ -40,4 +43,3 @@ runs:
         # Required, set by GitHub actions automatically:
         # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
-  
