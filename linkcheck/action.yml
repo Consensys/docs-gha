@@ -12,6 +12,10 @@ inputs:
     description: 'default branch'
     required: false
     default: main
+  FILE_EXTENSION:
+    description: 'extension to check'
+    required: false
+    default: .md
 
 runs:
   using: "composite"
@@ -33,4 +37,4 @@ runs:
         config-file: ./.docs-gha/linkcheck/config/link-check.json
         base-branch: ${{ inputs.BRANCH }}
         folder-path: ${{ inputs.DOC_DIR }}
-        file-extension: .mdx
+        file-extension: ${{ inputs.FILE_EXTENSION }}
