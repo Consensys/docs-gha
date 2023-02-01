@@ -7,6 +7,10 @@ inputs:
   GITHUB_TOKEN:
     description: 'Github secret Token'
     required: true
+  SEMANTIC_RELEASE:
+    description: 'whether to enable semantic-release versioning"
+    required: false
+    default: true
 
 runs:
   using: "composite"
