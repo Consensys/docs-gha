@@ -38,7 +38,8 @@ runs:
         npm ci
         npm run build
 
-    - name: Release
+    - if: ${{ inputs.SEMANTIC_RELEASE }} == 'true'
+      name: Release
       env:
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
         HUSKY: 0 # disable hooks for release
