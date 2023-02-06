@@ -11,6 +11,10 @@ inputs:
   GITHUB_TOKEN:
     description: "token to run with correct permissions"
     required: true
+  SKIP_TEST:
+    description: "set to true to skip case test"
+    required: false
+    default: false
 
 runs:
   using: "composite"
@@ -21,7 +25,8 @@ runs:
         repository: ConsenSys/docs-gha
         path: .docs-gha
 
-    - name: Check pages file name case
+    - if: ${{ inputs.SKIP_TEST == 'false' }}
+      name: Check pages file name case
       shell: sh
       run: |
         ls -la .
