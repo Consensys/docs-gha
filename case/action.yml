@@ -27,7 +27,7 @@ runs:
         ls -la .
         echo "Testing file case in ${{ inputs.DOC_DIR }}."
         passed=true
-        for filename in `find ${{ inputs.DOC_DIR } -type f  \( -iname \*.md -o -iname \*.mdx \) -not -path "./node_modules/*" | ( ! grep -P -v "^.[\/0-9a-z\-\_.]+.mdx?$" )`
+        for filename in `find ${{ inputs.DOC_DIR }} -type f  \( -iname \*.md -o -iname \*.mdx \) -not -path "./node_modules/*" | ( ! grep -P -v "^.[\/0-9a-z\-\_.]+.mdx?$" )`
         do
           echo "$filename"
           echo "::error file=$filename ::File path must be only lowercase letters, digits, - (dash) and _ (underscore)"
