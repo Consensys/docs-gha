@@ -16,6 +16,10 @@ inputs:
     description: 'extension to check'
     required: false
     default: .md
+  CONFIG_FILE:
+    description: 'default config file.'
+    required: false
+    default: linkcheck/config/link-check.json
 
 runs:
   using: "composite"
@@ -34,7 +38,7 @@ runs:
         use-quiet-mode: yes
         use-verbose-mode: yes
         check-modified-files-only: yes
-        config-file: ./.docs-gha/linkcheck/config/link-check.json
+        config-file: ${{ inputs.CONFIG_FILE }}
         base-branch: ${{ inputs.BRANCH }}
         folder-path: ${{ inputs.DOC_DIR }}
         file-extension: ${{ inputs.FILE_EXTENSION }}
