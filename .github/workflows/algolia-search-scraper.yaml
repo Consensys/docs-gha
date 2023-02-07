@@ -32,10 +32,7 @@ jobs:
         run: |
           content=$(cat ./.github/config/${{ matrix.version }}.json | jq -r tostring)
           echo "configJSON=$content" >> $GITHUB_OUTPUT
-      - name: Algolia Docsearch Action
-        id: algolia
-        env:
-          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
+      - id: algolia
+        uses: ./.github/actions/algolia-scraper
+        with:
           CONFIG: ${{ steps.config.outputs.configJSON }}
-        uses: adapttive/algolia-docsearch-action@1.1.1
