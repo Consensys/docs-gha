@@ -1,0 +1,40 @@
+name: Algolia Search Scraper
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+jobs:
+  docs_matrix:
+    strategy:
+      matrix:
+        version:
+          [
+            "teku",
+            "goquorum",
+            "zkevm",
+            "tessera",
+            "web3signer",
+            "ethsigner",
+            "qkm",
+            "docs-template",
+            "gnark",
+          ]
+  build:
+    name: Trigger Algolia Scraper
+    runs-on: ubuntu-latest
+    environment: algolia
+    steps:
+      - uses: actions/checkout@v3
+      - id: config
+        name: Read ${{ matrix.version }}.json
+        run: |
+          content=$(cat ./.github/config/${{ matrix.version }}.json)
+          echo "configJSON=$content" >> $GITHUB_OUTPUT
+      - name: Run algolia scraper container
+        uses: docker://algolia/docsearch-scraper
+        env:
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
+          CONFIG: ${{ fromJson(steps.config.outputs.configJSON) }}
