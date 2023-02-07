@@ -34,6 +34,8 @@ jobs:
           echo "configJSON=$content" >> $GITHUB_OUTPUT
       - name: Run algolia scraper container
         uses: docker://algolia/docsearch-scraper
+        with:
+          entrypoint: pipenv run python -m src.index
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
