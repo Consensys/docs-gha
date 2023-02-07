@@ -23,6 +23,7 @@ jobs:
             "qkm",
             "docs-template",
             "gnark",
+            "rollups",
           ]
     steps:
       - uses: actions/checkout@v3
