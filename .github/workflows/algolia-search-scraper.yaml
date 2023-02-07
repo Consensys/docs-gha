@@ -32,7 +32,20 @@ jobs:
         run: |
           content=$(cat ./.github/config/${{ matrix.version }}.json | jq -r tostring)
           echo "configJSON=$content" >> $GITHUB_OUTPUT
-      - id: algolia
-        uses: ./.github/actions/algolia-scraper
+      - name: Checkout algolia/docsearch-scraper
+        uses: actions/checkout@v3
         with:
+          repository: algolia/docsearch-scraper
+          path: "./algolia"
+      - name: pipenv
+        shell: bash
+        env:
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.config.outputs.configJSON }}
+        run: |
+          cd ./algolia
+          pipenv run python --version
+          pipenv run pip freeze
+          cd ./algolia/scraper
+          pipenv run python -m src.index
