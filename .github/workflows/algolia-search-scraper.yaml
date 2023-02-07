@@ -6,7 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  docs_matrix:
+  build:
+    name: Trigger Algolia Scraper
+    runs-on: ubuntu-latest
+    environment: algolia
     strategy:
       matrix:
         version:
@@ -21,10 +24,6 @@ jobs:
             "docs-template",
             "gnark",
           ]
-  build:
-    name: Trigger Algolia Scraper
-    runs-on: ubuntu-latest
-    environment: algolia
     steps:
       - uses: actions/checkout@v3
       - id: config
