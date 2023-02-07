@@ -37,13 +37,19 @@ jobs:
         with:
           repository: algolia/docsearch-scraper
           path: "./algolia"
-      - name: Set up Python 3.6
+      - name: Set up Python
         uses: actions/setup-python@v4.5.0
         with:
-          python-version: 3.6
+          python-version: 3.6.15
       - name: Install pipenv
         shell: bash
-        run: pip install pipenv
+        run: |
+          cd ./algolia
+          pip install pipenv
+      - name: pipenv Pipfile
+        shell: bash
+        run: |
+          pipenv install
       - name: pipenv
         shell: bash
         env:
@@ -51,7 +57,6 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.config.outputs.configJSON }}
         run: |
-          cd ./algolia
           pipenv run python --version
           pipenv run pip freeze
           cd ./algolia/scraper
