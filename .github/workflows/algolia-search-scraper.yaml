@@ -32,11 +32,10 @@ jobs:
         run: |
           content=$(cat ./.github/config/${{ matrix.version }}.json | jq -r tostring)
           echo "configJSON=$content" >> $GITHUB_OUTPUT
-      - name: Run algolia scraper container
-        uses: docker://algolia/docsearch-scraper
-        with:
-          entrypoint: python -m src.index
+      - name: Algolia Docsearch Action
+        id: algolia
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.config.outputs.configJSON }}
+        uses: adapttive/algolia-docsearch-action@1.1.1
