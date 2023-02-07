@@ -37,4 +37,4 @@ jobs:
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
-          CONFIG: ${{ fromJson(steps.config.outputs.configJSON) }}
+          CONFIG: ${{ steps.config.outputs.configJSON }}
