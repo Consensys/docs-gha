@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Trigger Algolia Scraper
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: algolia
     strategy:
       matrix:
@@ -40,24 +40,22 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4.5.0
         with:
-          python-version: "3.10"
+          python-version: "3.6"
       - name: Install pipenv
         shell: bash
         run: |
-          cd ./algolia
           pip install pipenv
       - name: pipenv Pipfile
         shell: bash
         run: |
+          cd ./algolia
           pipenv install
-      - name: pipenv
+      - name: run algolia
         shell: bash
         env:
           APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
           API_KEY: ${{ secrets.API_KEY }}
           CONFIG: ${{ steps.config.outputs.configJSON }}
         run: |
-          pipenv run python --version
-          pipenv run pip freeze
           cd ./algolia/scraper
           pipenv run python -m src.index
