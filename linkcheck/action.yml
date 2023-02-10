@@ -33,7 +33,7 @@ runs:
     # use-quiet-mode: only show errors in output
     # use-verbose-mode: show detailed HTTP status for checked links
     - name: Test links
-      uses: gaurav-nelson/github-action-markdown-link-check@v1.0.14
+      uses: gaurav-nelson/github-action-markdown-link-check@v1.0.13
       with:
         use-quiet-mode: yes
         use-verbose-mode: yes
