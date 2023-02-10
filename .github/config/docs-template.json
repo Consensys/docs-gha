@@ -1,9 +1,9 @@
 {
   "scrape_start_urls": true,
   "index_name": "docs-template",
-  "start_urls": ["https://docs-template-consensys.vercel.app/"],
-  "stop_urls": ["^https://docs-template-consensys.vercel.app/$"],
-  "sitemap_urls": ["https://docs-template-consensys.vercel.app/sitemap.xml"],
+  "start_urls": ["https://docs-template.consensys.net/"],
+  "stop_urls": ["^https://docs-template.consensys.net/$"],
+  "sitemap_urls": ["https://docs-template.consensys.net/sitemap.xml"],
   "sitemap_alternate_links": true,
   "selectors": {
     "lvl0": {
