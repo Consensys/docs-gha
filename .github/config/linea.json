@@ -1,9 +1,9 @@
 {
   "scrape_start_urls": true,
-  "index_name": "zkevm",
-  "start_urls": ["https://docs.zkevm.consensys.net/"],
-  "stop_urls": ["^https://docs.zkevm.consensys.net/$"],
-  "sitemap_urls": ["https://docs.zkevm.consensys.net/sitemap.xml"],
+  "index_name": "linea",
+  "start_urls": ["https://docs.linea.build/"],
+  "stop_urls": ["^https://docs.linea.build/$"],
+  "sitemap_urls": ["https://docs.linea.build/sitemap.xml"],
   "sitemap_alternate_links": true,
   "selectors": {
     "lvl0": {

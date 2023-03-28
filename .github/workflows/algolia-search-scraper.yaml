@@ -16,7 +16,7 @@ jobs:
           [
             "teku",
             "goquorum",
-            "zkevm",
+            "linea",
             "tessera",
             "web3signer",
             "ethsigner",
