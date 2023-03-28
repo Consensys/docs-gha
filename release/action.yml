@@ -29,8 +29,8 @@ runs:
     - name: Use Node.js ${{ steps.nvm.outputs.NODE_VERSION }}
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
         registry-url: https://registry.npmjs.org/
+        node-version-file: '.nvmrc'
 
     - name: npm build
       shell: bash
