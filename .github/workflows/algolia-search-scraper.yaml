@@ -20,10 +20,8 @@ jobs:
             "tessera",
             "web3signer",
             "ethsigner",
-            "qkm",
             "docs-template",
             "gnark",
-            "rollups",
             "orion",
             "qbs",
           ]
