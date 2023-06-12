@@ -24,7 +24,6 @@ jobs:
             "docs-template",
             "gnark",
             "orion",
-            "qbs",
           ]
     steps:
       - uses: actions/checkout@v3
