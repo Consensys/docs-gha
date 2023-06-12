@@ -32,6 +32,9 @@
       "pattern": "^http(s)?://help.figma.com"
     },
     {
+      "pattern": "^http(s)?://metamask.io"
+    },
+    {
       "comment": "Skip urls in the redoc macro with entity",
       "pattern": "http(s)?://.+\\&\\#39\\;"
     }
