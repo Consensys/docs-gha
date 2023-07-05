@@ -15,6 +15,10 @@
       "pattern": "^http(s)?://github.com/ConsenSys/orchestrate"
     },
     {
+      "comment": "This is a private repo",
+      "pattern": "^http(s)?://github.com/INFURA/docs(?:/(issues|pulls))?"
+    },
+    {
       "comment": "Consensys.net now has a ddos attack protection",
       "pattern": "^http(s)?://consensys.net"
     },
