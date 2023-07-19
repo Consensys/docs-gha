@@ -15,7 +15,7 @@ runs:
       uses: actions/checkout@v3
       with:
         repository: Consensys/docs-gha-2023
-        path: .docs-gha
+        path: .docs-gha-2023
 
     - name: Read .nvmrc
       shell: bash

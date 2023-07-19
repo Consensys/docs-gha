@@ -15,7 +15,7 @@ runs:
       uses: actions/checkout@v3
       with:
         repository: Consensys/docs-gha-2023
-        path: .docs-gha
+        path: .docs-gha-2023
 
     - name: Get additional Github env vars # vars from Github env, can not be modified by users
       uses: FranzDiebold/github-env-vars-action@v2
