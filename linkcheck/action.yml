@@ -27,7 +27,7 @@ runs:
     - name: Checkout tools repo
       uses: actions/checkout@v3
       with:
-        repository: ConsenSys/docs-gha
+        repository: Consensys/docs-gha-2023
         path: .docs-gha
 
     # use-quiet-mode: only show errors in output

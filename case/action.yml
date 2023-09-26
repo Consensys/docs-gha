@@ -22,8 +22,8 @@ runs:
     - name: Checkout tools repo
       uses: actions/checkout@v3
       with:
-        repository: ConsenSys/docs-gha
-        path: .docs-gha
+        repository: Consensys/docs-gha-2023
+        path: .docs-gha-2023
 
     - if: ${{ inputs.SKIP_TEST == 'false' }}
       name: Check pages file name case

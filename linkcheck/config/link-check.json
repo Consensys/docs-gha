@@ -41,11 +41,17 @@
     {
       "comment": "Skip urls in the redoc macro with entity",
       "pattern": "http(s)?://.+\\&\\#39\\;"
-    }
-  ,
+    },
     {
       "comment": "Skip urls in the redoc macro with char",
       "pattern": "http(s)?://.+'"
+    },
+    {"comment": "Elon broke the twitterverse",
+     "pattern": "^http(s)?://(?:www\\.)?twitter\\.com/(?:#!/)?(?:[a-zA-Z0-9_]{1,15})/status(?:es)?/(?:\\d+|\\d+/photo/\\d+)"
+    },
+    {
+      "comment": "Docusaurus-format links",
+      "pattern": "\\[.*?\\]\\([^)]+\\)"
     }
   ],
   "httpHeaders": [
