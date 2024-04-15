@@ -16,7 +16,7 @@ runs:
   using: "composite"
   steps:
     - name: Checkout tools repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: Consensys/docs-gha-2023
         path: .docs-gha-2023
