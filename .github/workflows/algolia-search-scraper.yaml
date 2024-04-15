@@ -26,7 +26,7 @@ jobs:
             "orion",
           ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: config
         name: Read ${{ matrix.version }}.json
         shell: bash
@@ -34,7 +34,7 @@ jobs:
           content=$(cat ./.github/config/${{ matrix.version }}.json | jq -r tostring)
           echo "configJSON=$content" >> $GITHUB_OUTPUT
       - name: Checkout algolia/docsearch-scraper
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: algolia/docsearch-scraper
           path: "./algolia"
