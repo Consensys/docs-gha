@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'Dependency Review'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v4
+      with:
+        repository: Consensys/docs-gha
+        path: .docs-gha
+
+    - name: Dependency Review
+      uses: actions/dependency-review-action@v4
+      with:
+        fail-on-severity: high
+        deny-licenses: LGPL-2.0, BSD-2-Clause

@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'MetaMask Security Code Scanner'
+description: 'MetaMask Security Code Scanner'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
+    required: true
+  SECURITY_SCAN_METRICS_TOKEN:
+    description: 'Metrics token'
+    required: true
+  APPSEC_BOT_SLACK_WEBHOOK:
+    description: 'Slack webhook'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v4
+      with:
+        repository: Consensys/docs-gha
+        path: .docs-gha
+
+    - name: MetaMask Security Code Scanner
+      uses: MetaMask/Security-Code-Scanner@main
+      with:
+        repo: ${{ github.repository }}
+        paths_ignored: |
+          .storybook/
+          '**/__snapshots__/'
+          '**/*.snap'
+          '**/*.stories.js'
+          '**/*.stories.tsx'
+          '**/*.test.browser.ts*'
+          '**/*.test.js*'
+          '**/*.test.ts*'
+          '**/fixtures/'
+          '**/jest.config.js'
+          '**/jest.environment.js'
+          '**/mocks/'
+          '**/test*/'
+          docs/
+          e2e/
+          merged-packages/
+          node_modules
+          storybook/
+          test*/
+        rules_excluded: example
+        project_metrics_token: ${{ inputs.SECURITY_SCAN_METRICS_TOKEN }}
+        slack_webhook: ${{ inputs.APPSEC_BOT_SLACK_WEBHOOK }}
