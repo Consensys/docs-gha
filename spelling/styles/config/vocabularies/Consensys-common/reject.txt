@@ -1,0 +1,13 @@
+[aA]utomagically
+berkeley[dD][bB]
+[bB]lacklist[s]?
+[bB]lock[ -][cC]hain[s]?
+[dD]App[s]?
+ethereum|[eE]therum
+[mM]etamask|[mM]eta[ -][mM]ask
+[sS]tarkNet|[sS]tark[ -]Net
+[sS]tarkware|[sS]tark[ -]ware
+[wW]eb3-[sS]igner|[w]eb3[sS]igner
+[wW]hitelist[s]?
+zk[sS]ync
+[Zz][kK][ -]EVM|[Zz][kK]EVM

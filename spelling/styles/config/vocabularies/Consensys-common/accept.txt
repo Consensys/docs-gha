@@ -128,6 +128,8 @@ Schnorr
 Slack
 [sS]lashable
 Splunk
+Starknet
+StarkWare
 [sS]trikethrough
 [sS]ubcommand[s]?
 [sS]ubnet[s]?
@@ -151,4 +153,7 @@ tmux
 Web3Signer
 [wW]ebsocket[s]?
 [wW]ithdrawable
+[yY]aml|YAML
 Zinken
+ZKsync
+zkEVM
