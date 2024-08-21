@@ -1,13 +1,45 @@
+ansible
+arithmatex
 [aA]utomagically
 berkeley[dD][bB]
+bintray
 [bB]lacklist[s]?
 [bB]lock[ -][cC]hain[s]?
+code[fF]i
+[cC]onsenSys|Consen[sS]us
 [dD]App[s]?
+[dD]oppelgänger
+divio
 ethereum|[eE]therum
+ether[sS]can
+eth[sS]igner
+figma
+file[cC]oin
+gitHub|Github
+gitter
+Gnark
+[gG]oquorum|goQuorum
+gradle
+grafana
+hashi[cC]orp
+helm[fF]ile|Helmfile
+home[bB]rew
+[jJ]ubJub
+kaleido
+kafka
+katacoda
+kovan
+Lib[sS]odium
+log[bB]ack|logBack
+log[sS]tash
 [mM]etamask|[mM]eta[ -][mM]ask
+[sS]tarkgate
 [sS]tarkNet|[sS]tark[ -]Net
 [sS]tarkware|[sS]tark[ -]ware
+uni[sS]wap
+web3
 [wW]eb3-[sS]igner|[w]eb3[sS]igner
 [wW]hitelist[s]?
+wei
 zk[sS]ync
 [Zz][kK][ -]EVM|[Zz][kK]EVM
