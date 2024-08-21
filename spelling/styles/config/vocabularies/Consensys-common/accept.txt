@@ -30,7 +30,7 @@ Consensys
 [dD]eserialization
 [dD]esynchronization
 Divio
-Doctools
+Doc[tT]ools
 [dD]oppelganger[s]?
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?
@@ -48,7 +48,7 @@ Ganache
 GitHub
 Gitter
 gnark
-Goerli
+[gG]oerli
 GoQuorum
 [gG]olang
 Gradle
@@ -83,7 +83,7 @@ Logstash
 Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
-[mM]erkle
+Merkle
 MetaMask
 minikube
 MkDocs
@@ -97,7 +97,7 @@ Nodejs
 [oO]nchain
 Orion
 [pP]arallelization
-PegaSys
+Pegasys
 [pP]ermission(?:ing|ed)?
 [pP]laintext
 [pP]luglet[s]?
@@ -108,8 +108,8 @@ PoW
 [pP]re
 [pP]reidentif(?:y|ied)
 Prometheus
-Protobuf
-Prysm
+[pP]rotobuf
+Prysm|PRYSM
 Prysmatic
 Pyrmont
 [qQ]uorum

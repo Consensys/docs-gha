@@ -32,7 +32,13 @@ kovan
 Lib[sS]odium
 log[bB]ack|logBack
 log[sS]tash
+merkle
 [mM]etamask|[mM]eta[ -][mM]ask
+orion
+[pP]egaSys
+prometheus
+redis
+rinkeby
 [sS]tarkgate
 [sS]tarkNet|[sS]tark[ -]Net
 [sS]tarkware|[sS]tark[ -]ware
