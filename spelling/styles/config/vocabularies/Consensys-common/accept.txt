@@ -15,6 +15,7 @@ Bintray
 [bB]ootnode[s]?
 [bB]roadcast(?:ing|ed)?
 Cakeshop
+C-Chain
 [cC]lasspath[s]?
 Codefi
 [cC]oinbase
@@ -105,6 +106,7 @@ Pegasys
 PoA
 Postgres
 PoW
+P-Chain
 [pP]re
 [pP]reidentif(?:y|ied)
 Prometheus
@@ -160,6 +162,7 @@ Web3
 Web3Signer
 [wW]ebsocket[s]?
 [wW]ithdrawable
+X-Chain
 [yY]aml|YAML
 Zinken
 ZKsync

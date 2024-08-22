@@ -5,6 +5,7 @@ berkeley[dD][bB]
 bintray
 [bB]lacklist[s]?
 [bB]lock[ -][cC]hain[s]?
+c[ -][cC]hain
 code[fF]i
 [cC]onsenSys|Consen[sS]us
 [dD]App[s]?
@@ -13,6 +14,7 @@ divio
 ethereum|[eE]therum
 ether[sS]can
 eth[sS]igner
+evm
 figma
 file[cC]oin
 gitHub|Github
@@ -36,6 +38,7 @@ merkle
 [mM]etamask|[mM]eta[ -][mM]ask
 orion
 [pP]egaSys
+p[ -][cC]hain
 prometheus
 redis
 rinkeby
@@ -47,5 +50,6 @@ web3
 [wW]eb3-[sS]igner|[w]eb3[sS]igner
 [wW]hitelist[s]?
 wei
+x[ -][cC]hain
 zk[sS]ync
 [Zz][kK][ -]EVM|[Zz][kK]EVM
