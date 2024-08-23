@@ -20,8 +20,14 @@ runs:
     - name: Vale
       uses: errata-ai/vale-action@v2
       with:
-        files: '["./docs/", "./blog/"]' 
-        vale_flags: "--config ./.docs-gha/spelling/config/.vale.ini --glob='!docs/**/*.js'"        
+        files: |
+          "./docs/", 
+          "./blog/", 
+          "./services/", 
+          "./developer-tools/", 
+          "./snaps/", 
+          "./wallet/" 
+        vale_flags: "--config ./.docs-gha/spelling/.vale.ini --glob='!docs/**/*.js'"        
       env:
         # Required, set by GitHub actions automatically:
         # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
