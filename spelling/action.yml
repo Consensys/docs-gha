@@ -21,12 +21,12 @@ runs:
       uses: errata-ai/vale-action@v2
       with:
         files: |
-          "./docs/", 
-          "./blog/", 
-          "./services/", 
-          "./developer-tools/", 
-          "./snaps/", 
-          "./wallet/" 
+          "docs/", 
+          "blog/", 
+          "services/", 
+          "developer-tools/", 
+          "snaps/", 
+          "wallet/" 
         vale_flags: "--config ./.docs-gha/spelling/.vale.ini --glob='!docs/**/*.js'"        
       env:
         # Required, set by GitHub actions automatically:
