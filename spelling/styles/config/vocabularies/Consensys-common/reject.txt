@@ -36,7 +36,7 @@ Lib[sS]odium
 log[bB]ack|logBack
 log[sS]tash
 merkle
-[mM]etamask|[mM]eta[ -][mM]ask
+# [mM]etamask|[mM]eta[ -][mM]ask
 orion
 [pP]egaSys
 p[ -][cC]hain
