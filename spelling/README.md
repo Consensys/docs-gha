@@ -55,23 +55,4 @@ Vale too.
 2. Will links be false positives, e.g. Can linting for " CLI" work to avoid false positives for links?
 3. Can we use reject [here to prevent links being put in this format, is it covered another way?
 
-### Testing
 
-Removed this from Vale ini to try and just get Microsoft working
-
-# Style.Rule = {YES, NO} to enable or disable a specific rule
-Microsoft.Contractions = warning
-
-Microsoft.GeneralURL = NO
-
-# Microsoft.Acronyms is replaced by Consensys list
-Microsoft.Acronyms = NO
-
-# Microsoft.Avoid is not relevant
-Microsoft.Avoid = NO
-
-Microsoft.Headings = YES
-
-write-good.Weasel = NO
-
-proselint.Hyperbole = warning
