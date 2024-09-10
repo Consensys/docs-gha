@@ -11,6 +11,7 @@ code[fF]i
 [dD]App[s]?
 [dD]oppelgänger
 divio
+e[rR][cC][ -]20
 ethereum|[eE]therum
 ether[sS]can
 eth[sS]igner

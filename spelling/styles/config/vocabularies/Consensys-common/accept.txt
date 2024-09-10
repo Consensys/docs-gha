@@ -36,6 +36,7 @@ Doc[tT]ools
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?
 [eE]node[s]?
+ERC-20
 etcd
 [eE]thdo
 EthSigner

@@ -43,3 +43,14 @@ If API specs are managed as YAML files, need to test whether Vale can handle lin
 
 This heading should trigger warning for non-compliance with sentence case. Metamask should upset 
 Vale too.
+
+## ToDo
+
+### Linea
+
+1. We seem to be using proper noun for Coordinator but not for prover
+2. Proper Linea Voyage
+
+### General
+2. Will links be false positives, e.g. Can linting for " CLI" work to avoid false positives for links?
+3. Can we use reject [here to prevent links being put in this format, is it covered another way?
