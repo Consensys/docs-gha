@@ -35,8 +35,3 @@ runs:
         npm run lint
         npm run typecheck        
 
-    - name: markdown lint
-      uses: DavidAnson/markdownlint-cli2-action@v17
-      with:
-        globs: '**/*.md'
-        separator: ','

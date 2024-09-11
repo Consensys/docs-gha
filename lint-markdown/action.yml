@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'lint: markdown'
+description: 'Composite action to lint markdown'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    # - name: Checkout tools repo
+    #   uses: actions/checkout@v4
+    #   with:
+    #     repository: Consensys/docs-gha
+    #     path: .docs-gha
+    
+    - name: markdown lint
+      uses: DavidAnson/markdownlint-cli2-action@v17
+      with:
+        globs: '**/*.md'
+        separator: ','
