@@ -11,12 +11,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checkout tools repo
-      uses: actions/checkout@v4
-      with:
-        repository: Consensys/docs-gha
-        path: .docs-gha
-
     - name: Read .nvmrc
       shell: bash
       run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_OUTPUT
@@ -28,10 +22,10 @@ runs:
         registry-url: https://registry.npmjs.org/
         node-version-file: '.nvmrc'
 
-
     - name: npm install, lint
       shell: bash
       run: |
         npm ci
         npm run lint
         npm run typecheck        
+
