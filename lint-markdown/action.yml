@@ -24,7 +24,6 @@ runs:
       with:
         repository: Consensys/docs-gha
         path: .docs-gha
-        ref: vale
 
     - name: markdown lint
       uses: DavidAnson/markdownlint-cli2-action@v17

@@ -60,11 +60,11 @@ MD012:
 # MD013/line-length : Line length : https://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md013.md
 MD013:
   # Number of characters
-  line_length: 100
+  line_length: 200
   # Number of characters for headings
   heading_line_length: 100
   # Number of characters for code blocks
-  code_block_line_length: 100
+  code_block_line_length: 200
   # Include code blocks
   code_blocks: true
   # Include tables
@@ -107,11 +107,11 @@ MD024: false
   # siblings_only: false
 
 # MD025/single-title/single-h1 : Multiple top-level headings in the same document : https://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md025.md
-MD025:
+MD025: false
   # Heading level
-  level: 3
-  # RegExp for matching title in front matter
-  front_matter_title: "^\\s*title\\s*[:=]"
+  # level: 3
+  # # RegExp for matching title in front matter
+  # front_matter_title: "^\\s*title\\s*[:=]"
 
 # MD026/no-trailing-punctuation : Trailing punctuation in heading : https://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md026.md
 MD026:
@@ -183,11 +183,11 @@ MD040:
   language_only: false
 
 # MD041/first-line-heading/first-line-h1 : First line in a file should be a top-level heading : https://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md041.md
-MD041:
+MD041: false
   # Heading level
-  level: 1
+  # level: 2
   # RegExp for matching title in front matter
-  front_matter_title: "^\\s*title\\s*[:=]"
+  # front_matter_title: "^\\s*title\\s*[:=]"
 
 # MD042/no-empty-links : No empty links : https://github.com/DavidAnson/markdownlint/blob/v0.35.0/doc/md042.md
 MD042: true

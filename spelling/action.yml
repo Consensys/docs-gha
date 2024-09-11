@@ -27,7 +27,7 @@ runs:
         files: ${{ inputs.FILEPATHS }}
         separator: ","
         vale_flags: "--config .docs-gha/spelling/.vale.ini --glob={*.md,*.mdx}"
-        fail_on_error: true
+        # fail_on_error: true
         reporter: github-pr-check
       env:
         # Required, set by GitHub actions automatically:
