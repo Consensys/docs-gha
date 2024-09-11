@@ -8,7 +8,7 @@ inputs:
     description: 'Github secret Token'
     required: true
   FILEPATHS:
-    description: 'Filepaths to look at specified as a comma separated string ie "docs,blog,etc"'
+    description: 'Filepaths to look at, specified as a comma separated string ie "docs,blog,etc"'
     required: false
     default: 'docs'  
 
