@@ -25,9 +25,18 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
+    - uses: tj-actions/changed-files@v45
+      id: changed-files
+      with:
+        files:  ${{ inputs.FILEPATHS }}
+        separator: ','
+
     - name: markdown lint
+      if: ${{ steps.changed-files.outputs.all_changed_files != '' }}
       uses: DavidAnson/markdownlint-cli2-action@v17
       with:
         config: ${{ inputs.CONFIG_FILE }}
-        globs: ${{ inputs.FILEPATHS }}
+        globs: ${{ steps.changed-files.outputs.all_changed_files }}
         separator: ','
+        # don't block the build - let it proceed
+        #continue-on-error: true
