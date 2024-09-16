@@ -52,7 +52,7 @@ Vale too.
 2. Proper Linea Voyage
 
 ### General
-2. Will links be false positives, e.g. Can linting for " CLI" work to avoid false positives for links?
-3. Can we use reject [here to prevent links being put in this format, is it covered another way?
+1. Will links be false positives, e.g. Can linting for "CLI" work to avoid false positives for links?
+2. Can we use reject here to prevent links being put in this format, is it covered another way?
 
 
