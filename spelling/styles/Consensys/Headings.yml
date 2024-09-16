@@ -7,32 +7,31 @@ match: $sentence
 indicators:
   - ':'
 exceptions:
-  - Acronyms.yml
+  - Azure
   - Besu
   - BLS
+  - Consensys
+  - ETH
+  - Ethereum
   - EthSigner
   - GoQuorum
+  - Hashicorp
+  - Hyperledger
+  - Key Manager API
   - Quorum
   - Orion
-  - Hyperledger
   - PegaSys
-  - Consensys
-  - Ethereum
-  - ETH
   - TOML
   - YAML
   - YML
   - JSON
   - RPC
-  - Hashicorp
   - Vault
-  - Azure
   - CLI
   - Code
   - Cosmos
   - Docker
   - Emmet
-  - I
   - Kubernetes
   - Linux
   - macOS
