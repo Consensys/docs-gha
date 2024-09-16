@@ -6,10 +6,14 @@ ignorecase: true
 exceptions:
     - additional
     - additionaly
+    - alternatively
+    - holesky
     - however
     - implement
     - is
     - it's
-    - holesky
+    - maximum
+    - minimum
+    - sufficient
 tokens:
     - goerli
