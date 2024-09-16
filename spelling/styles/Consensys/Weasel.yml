@@ -5,7 +5,7 @@ level: warning
 tokens:
   - absolutely
   - accidentally
-  - additionally
+#ß  - additionally
   - allegedly
  # - alternatively
   - angrily
@@ -134,7 +134,7 @@ tokens:
   - poorly
   - powerfully
   - presumably
-  - previously
+#  - previously
   - promptly
   - punctually
   - quarterly
