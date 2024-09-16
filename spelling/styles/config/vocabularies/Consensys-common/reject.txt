@@ -21,6 +21,7 @@ file[cC]oin
 gitHub|Github
 gitter
 Gnark
+[gG]oerli
 [gG]oquorum|goQuorum
 gradle
 grafana
