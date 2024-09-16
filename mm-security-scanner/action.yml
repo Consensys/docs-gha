@@ -4,9 +4,6 @@ name: 'MetaMask Security Code Scanner'
 description: 'MetaMask Security Code Scanner'
 
 inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
   SECURITY_SCAN_METRICS_TOKEN:
     description: 'Metrics token'
     required: true

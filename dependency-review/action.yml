@@ -2,11 +2,6 @@
 ---
 name: 'Dependency Review'
 
-inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
-
 runs:
   using: "composite"
   steps:

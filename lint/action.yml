@@ -3,11 +3,6 @@
 name: 'test: lint all code'
 description: 'Composite action to lint all kind of files'
 
-inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
-
 runs:
   using: "composite"
   steps:
