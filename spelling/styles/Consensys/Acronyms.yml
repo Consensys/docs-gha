@@ -35,17 +35,21 @@ exceptions:
   - IBFT2
   - IDE
   - IPC
+  - IPFS
   - JAR
   - JDK
   - JRE
   - JSON
+  - JVM
   - KMS
   - P2P
   - PATH
   - PBFT
+  - PKCS
   - POA
   - POS
   - POST
+  - PostgreSQL
   - POW
   - RAM
   - REST
@@ -69,6 +73,5 @@ exceptions:
   - WAR
   - WEI
   - XML
-  - YAML
-  - yaml
+  - YAML|yaml
   - ZIP
