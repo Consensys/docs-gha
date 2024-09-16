@@ -41,6 +41,7 @@ exceptions:
   - POST
   - POW
   - RAM
+  - REST
   - RPC
   - RSA
   - SDK
