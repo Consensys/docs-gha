@@ -155,8 +155,7 @@ Redis
 [rR]edistributable[s]?
 [rR]eentrancy
 [rR]epurposing
-REST
-rest
+REST|rest
 Rinkeby
 Roboto
 [rR]ollup[s]?
