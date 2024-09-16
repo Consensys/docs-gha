@@ -1,4 +1,4 @@
-[aA]dditional
+[aA]dditional[ly]?
 [aA]llow[s]?
 [aA]llowlist[s]?
 [aA]lternatively
@@ -67,6 +67,7 @@ GitHub
 Gitter
 gnark
 [gG]oerli
+Google Cloud Platform Secret Manager|GCP Secret Manager
 GoQuorum
 [gG]olang
 Gradle
@@ -75,6 +76,7 @@ gRPC
 G?Wei
 Hashi[cC]orp
 Helmfile
+Holeksy
 Homebrew
 [hH]ostname[s]?
 [hH]owever
@@ -117,7 +119,8 @@ MetaMask
 minikube
 [mM]inimum
 MkDocs
-[mM]
+[mM]odify
+[mM]onitor
 [mM]ultiaddresse[s]?
 [mM]ultikey[s]?
 [mM]ultiple
@@ -142,6 +145,7 @@ PoW
 P-Chain
 [pP]re
 [pP]reidentif(?:y|ied)
+[pP]reviously
 Prometheus
 [pP]rotobuf
 Prysm|PRYSM
@@ -161,6 +165,7 @@ Roboto
 [rR]ollup[s]?
 Ropsten
 [sS]andbox(?:ing|ed)?
+[sS]ample[s]?
 [sS]ecretName
 [sS]epolia
 [sS]erializ(?:e|ing)
@@ -186,6 +191,7 @@ Teku
 Telegraf
 [tT]enantId
 [tT]estnet[s]?
+[tT]herefore
 tmux
 [tT]oolset[s]?
 [tT]rie[s]?
@@ -198,6 +204,7 @@ Uniswap
 [uU]nmarshal(?:ing|ed)?
 [Uu]ntrusted
 [uU]pstream[s]?
+USB Armory Mk II
 [vV]alidator[s]?
 [vV]aultName
 Vertx

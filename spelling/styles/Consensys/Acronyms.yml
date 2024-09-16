@@ -39,13 +39,16 @@ exceptions:
   - JDK
   - JRE
   - JSON
+  - JVM
   - KMS
   - P2P
   - PATH
   - PBFT
+  - PKCS
   - POA
   - POS
   - POST
+  - PostgreSQL
   - POW
   - RAM
   - REST
@@ -69,6 +72,5 @@ exceptions:
   - WAR
   - WEI
   - XML
-  - YAML
-  - yaml
+  - YAML|yaml
   - ZIP
