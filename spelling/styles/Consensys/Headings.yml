@@ -7,7 +7,9 @@ match: $sentence
 indicators:
   - ':'
 exceptions:
+  - Acronyms.yml
   - Besu
+  - BLS
   - EthSigner
   - GoQuorum
   - Quorum
