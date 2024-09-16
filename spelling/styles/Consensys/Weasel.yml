@@ -5,7 +5,7 @@ level: warning
 tokens:
   - absolutely
   - accidentally
-#ß  - additionally
+#  - additionally
   - allegedly
  # - alternatively
   - angrily
