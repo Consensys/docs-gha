@@ -11,3 +11,5 @@ exceptions:
     - is
     - it's
     - holesky
+tokens:
+    - goerli
