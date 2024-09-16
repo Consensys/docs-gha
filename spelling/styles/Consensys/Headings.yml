@@ -36,11 +36,13 @@ exceptions:
   - PegaSys
   - PostgreSQL
   - RPC
+  - Studio
+  - Swagger
   - TOML
   - REPL
-  - Studio
   - TLS
   - TypeScript
+  - UI
   - URLs
   - Vault
   - Visual
