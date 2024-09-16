@@ -9,19 +9,25 @@ second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
 exceptions:
   - API
   - AWS
+  - BLS
+  - BTC
   - CLA
   - CLI
+  - CORS
   - CPU
   - CSV
   - DEBUG
   - ECDSA
+  - EIP
   - ETH
   - EVM
   - ES
+  - GCP
   - GET
   - GPU
   - gRPC
   - GUI
+  - HEX
   - HTML
   - HTTP
   - HTTPS
@@ -33,6 +39,7 @@ exceptions:
   - JDK
   - JRE
   - JSON
+  - KMS
   - P2P
   - PATH
   - PBFT
@@ -45,6 +52,8 @@ exceptions:
   - RPC
   - RSA
   - SDK
+  - SECP
+  - SHA
   - SQL
   - SSH
   - SSL
@@ -53,8 +62,10 @@ exceptions:
   - TLS
   - TOC
   - TOML
+  - UI
   - URI
   - URL
+  - USB
   - WAR
   - WEI
   - XML
