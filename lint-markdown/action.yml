@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'lint: markdown'
+description: 'Composite action to lint markdown'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github secret Token'
+    required: true
+  CONFIG_FILE:
+    description: 'markdownlint config file'
+    required: false
+    default: ".docs-gha/lint-markdown/.markdownlint.yaml"
+  FILEPATHS:
+    description: 'Filepaths to look at, specified as a comma separated string ie "docs/**/*.md,blog/**/*.md,etc"'
+    required: false
+    default: "docs/**/*.md"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v4
+      with:
+        repository: Consensys/docs-gha
+        path: .docs-gha
+
+    - uses: tj-actions/changed-files@v45
+      id: changed-files
+      with:
+        files:  ${{ inputs.FILEPATHS }}
+        separator: ','
+
+    - name: markdown lint
+      if: ${{ steps.changed-files.outputs.all_changed_files != '' }}
+      uses: DavidAnson/markdownlint-cli2-action@v17
+      with:
+        config: ${{ inputs.CONFIG_FILE }}
+        globs: ${{ steps.changed-files.outputs.all_changed_files }}
+        separator: ','
+        # don't block the build - let it proceed
+        #continue-on-error: true

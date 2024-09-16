@@ -20,6 +20,10 @@ inputs:
     description: 'default config file.'
     required: false
     default: .docs-gha/linkcheck/config/link-check.json
+  MODIFIED_FILES_ONLY:
+    description: 'check modified files only'
+    required: false
+    default: yes
 
 runs:
   using: "composite"
@@ -37,7 +41,7 @@ runs:
       with:
         use-quiet-mode: yes
         use-verbose-mode: yes
-        check-modified-files-only: yes
+        check-modified-files-only: ${{ inputs.MODIFIED_FILES_ONLY }}
         config-file: ${{ inputs.CONFIG_FILE }}
         base-branch: ${{ inputs.BRANCH }}
         folder-path: ${{ inputs.DOC_DIR }}

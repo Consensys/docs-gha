@@ -7,6 +7,10 @@ inputs:
   GITHUB_TOKEN:
     description: 'Github secret Token'
     required: true
+  FILEPATHS:
+    description: 'Filepaths to look at, specified as a comma separated string ie "docs,blog,etc"'
+    required: false
+    default: 'docs'  
 
 runs:
   using: "composite"
@@ -20,14 +24,11 @@ runs:
     - name: Vale
       uses: errata-ai/vale-action@v2
       with:
-        files: |
-          "./docs/", 
-          "./blog/", 
-          "./services/", 
-          "./developer-tools/", 
-          "./snaps/", 
-          "./wallet/" 
-        vale_flags: "--config ./.docs-gha/spelling/.vale.ini --glob='!docs/**/*.js'"        
+        files: ${{ inputs.FILEPATHS }}
+        separator: ","
+        vale_flags: "--config .docs-gha/spelling/.vale.ini --glob={*.md,*.mdx}"
+        # fail_on_error: true
+        reporter: github-pr-check
       env:
         # Required, set by GitHub actions automatically:
         # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret

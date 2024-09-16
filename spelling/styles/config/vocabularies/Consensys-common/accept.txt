@@ -2,6 +2,7 @@
 [aA]llow[s]?
 [aA]llowlist[s]?
 [aA]lternatively
+API[s]?
 Ansible
 [aA]re
 [aA]rithmetization
@@ -31,6 +32,7 @@ Chatbot
 [cC]lientSecret
 Codefi
 [cC]oinbase
+[cC]onsensus
 Consensys
 [Cc]onsortiums
 [cC]ounterpart(?:y|ies)
@@ -71,11 +73,12 @@ Gradle
 Grafana
 gRPC
 G?Wei
-HashiCorp
+Hashi[cC]orp
 Helmfile
 Homebrew
 [hH]ostname[s]?
 [hH]owever
+HSM[s]?
 Hyperledger
 InfluxDB
 Infura
@@ -152,6 +155,8 @@ Redis
 [rR]edistributable[s]?
 [rR]eentrancy
 [rR]epurposing
+REST
+rest
 Rinkeby
 Roboto
 [rR]ollup[s]?
@@ -196,6 +201,8 @@ Uniswap
 [uU]pstream[s]?
 [vV]alidator[s]?
 [vV]aultName
+Vertx
+vCPU[s]?
 Web3
 Web3Signer
 [wW]ebsocket[s]?

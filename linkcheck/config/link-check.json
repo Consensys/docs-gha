@@ -52,6 +52,14 @@
     {
       "comment": "Docusaurus-format links",
       "pattern": "\\[.*?\\]\\([^)]+\\)"
+    },
+    {
+      "comment": "Ignore specific GitHub commit link",
+      "pattern": "^http(s)?://github.com/Consensys/linea-contracts-audit/commit/99039ebc8d6cb3009cf46286d5de4c484e03bc81"
+    },
+    {
+      "comment": "Ignore specific HackQuest link",
+      "pattern": "^http(s)?://www.hackquest.io/en/hackathon/Linea-Dev-Cook-Off"
     }
   ],
   "httpHeaders": [
