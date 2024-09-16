@@ -1,5 +1,3 @@
-additional
-additionaly
 allow
 allows
 allowlist
@@ -27,10 +25,6 @@ failover
 geth
 golang
 holesky
-however
-implement
-is
-it's
 linea
 liveness
 maximum

@@ -1,0 +1,13 @@
+extends: existence
+message: Consider removing '%s'
+level: warning
+ignorecase: true
+# Attempting to override other styles
+exceptions:
+    - additional
+    - additionaly
+    - however
+    - implement
+    - is
+    - it's
+    - holesky
