@@ -2,18 +2,20 @@ extends: existence
 message: Consider removing '%s'
 level: warning
 ignorecase: true
-# Attempting to override other styles
+# Attempting to override other packages' styles
 exceptions:
-    - additional
-    - additionaly
-    - alternatively
-    - holesky
-    - however
-    - implement
-    - is
-    - it's
-    - maximum
-    - minimum
-    - sufficient
+    - [aA]dditional[ly]?
+    - [aA]llow[s]?
+    - [aA]lternative[ly]?
+    - [eE]nsure
+    - [hH]olesky
+    - [hH]owever
+    - [iI]mplement
+    - [iI]s
+    - [iI]t's
+    - [mM]aximum
+    - [mM]inimum
+    - [pP]reviously
+    - [sS]ufficient
 tokens:
-    - goerli
+    - [gG]oerli

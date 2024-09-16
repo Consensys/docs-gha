@@ -7,40 +7,44 @@ match: $sentence
 indicators:
   - ':'
 exceptions:
+  - API
+  - AWS
   - Azure
   - Besu
   - BLS
+  - CLI
+  - Code
   - Consensys
+  - Cosmos
+  - Docker
+  - Emmet
   - ETH
   - Ethereum
   - EthSigner
   - GoQuorum
   - Hashicorp
   - Hyperledger
-  - Key Manager API
-  - Quorum
-  - Orion
-  - PegaSys
-  - TOML
-  - YAML
-  - YML
   - JSON
-  - RPC
-  - Vault
-  - CLI
-  - Code
-  - Cosmos
-  - Docker
-  - Emmet
+  - KMS
   - Kubernetes
   - Linux
   - macOS
   - Marketplace
   - MongoDB
+  - Quorum
+  - Orion
+  - PegaSys
+  - PostgreSQL
+  - RPC
+  - TOML
   - REPL
   - Studio
+  - TLS
   - TypeScript
   - URLs
+  - Vault
   - Visual
   - VS
   - Windows
+  - YAML
+  - YML
