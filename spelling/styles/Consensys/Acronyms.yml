@@ -35,6 +35,7 @@ exceptions:
   - IBFT2
   - IDE
   - IPC
+  - IPFS
   - JAR
   - JDK
   - JRE

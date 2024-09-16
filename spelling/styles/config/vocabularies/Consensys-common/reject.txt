@@ -1,39 +1,13 @@
-ansible
 arithmatex
 [aA]utomagically
-berkeley[dD][bB]
-bintray
 [bB]lacklist[s]?
 [bB]lock[ -][cC]hain[s]?
-c[ -][cC]hain
-code[fF]i
 [cC]onsenSys|Consen[sS]us
-[dD]App[s]?
 [dD]oppelgänger
-divio
 e[rR][cC][ -]20
-ethereum|[eE]therum
-ether[sS]can
-eth[sS]igner
+[eE]therum
 evm
-figma
-file[cC]oin
-gitHub|Github
-gitter
-Gnark
 [gG]oerli
-[gG]oquorum|goQuorum
-gradle
-grafana
-hashi[cC]orp
-helm[fF]ile|Helmfile
-home[bB]rew
-[jJ]ubJub
-kaleido
-kafka
-katacoda
-kovan
-Lib[sS]odium
 log[bB]ack|logBack
 log[sS]tash
 merkle
@@ -41,17 +15,8 @@ merkle
 orion
 [pP]egaSys
 p[ -][cC]hain
-prometheus
-redis
-rinkeby
-[sS]tarkgate
-[sS]tarkNet|[sS]tark[ -]Net
-[sS]tarkware|[sS]tark[ -]ware
-uni[sS]wap
-web3
-[wW]eb3-[sS]igner|[w]eb3[sS]igner
+[sS]tark[ -]Net
+[sS]tark[ -]ware
 [wW]hitelist[s]?
-wei
 x[ -][cC]hain
-zk[sS]ync
-[Zz][kK][ -]EVM|[Zz][kK]EVM
+[Zz][kK][ -]EVM
