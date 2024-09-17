@@ -4,9 +4,6 @@ name: 'lint: markdown'
 description: 'Composite action to lint markdown'
 
 inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
   CONFIG_FILE:
     description: 'markdownlint config file'
     required: false
