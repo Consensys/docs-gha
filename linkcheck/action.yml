@@ -34,10 +34,11 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
+    # 5c5dfc0ac2e225883c0e5f03a85311ec2830d368 = v1 as at 24092024
     # use-quiet-mode: only show errors in output
     # use-verbose-mode: show detailed HTTP status for checked links
     - name: Test links
-      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      uses: gaurav-nelson/github-action-markdown-link-check@5c5dfc0ac2e225883c0e5f03a85311ec2830d368
       with:
         use-quiet-mode: yes
         use-verbose-mode: yes
