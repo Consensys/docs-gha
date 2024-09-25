@@ -8,9 +8,6 @@ inputs:
     description: "default directory path from project root"
     required: false
     default: docs
-  GITHUB_TOKEN:
-    description: "token to run with correct permissions"
-    required: true
   SKIP_TEST:
     description: "set to true to skip case test"
     required: false
@@ -44,7 +41,3 @@ runs:
           echo "Wrong example: My-Folder/MyFile-NAME.old.md"
           exit 1
         fi
-      env:
-        # Required, set by GitHub actions automatically:
-        # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
-        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
