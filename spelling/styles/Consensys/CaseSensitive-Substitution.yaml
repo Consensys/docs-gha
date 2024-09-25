@@ -1,5 +1,5 @@
 extends: substitution
-message: For system-specific term, consider %s instead of "%s"
+message: For component of a system or named entity, consider standard format, %s instead of "%s"
 ignorecase: false
 level: warn
 action:
@@ -11,3 +11,5 @@ swap:
   prover: Prover
   # Linea Voyage
   voyage: Voyage
+  besu: Besu
+  Dapp: dapp

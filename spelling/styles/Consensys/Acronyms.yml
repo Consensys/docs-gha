@@ -15,6 +15,7 @@ exceptions:
   - CLI
   - CORS
   - CPU
+  - CSS
   - CSV
   - DEBUG
   - ECDSA
@@ -26,6 +27,7 @@ exceptions:
   - GET
   - GPU
   - gRPC
+  - GTag
   - GUI
   - HEX
   - HTML
@@ -40,13 +42,14 @@ exceptions:
   - JDK
   - JRE
   - JSON
+  - JSX
   - JVM
   - KMS
   - P2P
   - PATH
   - PBFT
   - PKCS
-  - POA
+  - PoA
   - POS
   - POST
   - PostgreSQL
@@ -63,6 +66,7 @@ exceptions:
   - SSL
   - SVG
   - TCP
+  - TKBU
   - TLS
   - TOC
   - TOML

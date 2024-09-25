@@ -1,3 +1,4 @@
+Algolia
 Ansible
 [aA]utogenerat(?:ing|ed)?
 [aA]ttester[s]?
@@ -8,9 +9,7 @@ AWS Key Management Service
 AWS Secrets Manager
 Azure Key Vault
 BerkeleyDB
-Besu
 Bintray
-[bB]roadcast(?:ing|ed)?
 Cakeshop
 C-Chain
 Chatbot
@@ -23,6 +22,7 @@ Consensys
 [cC]ounterpart(?:y|ies)
 [cC]rafter
 [cC]ryptocurrenc(?:y|ies)
+CSpell
 [dD]app[s]?
 [dD]eauthoriz(?:e|ing)
 [dD]enylist[s]?
@@ -31,12 +31,14 @@ Consensys
 [dD]esynchronization
 Divio
 Doc[tT]ools
+[dD]ocusaurus
 [dD]oppelganger[s]?
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?
 [eE]ndpointOverride
 [eE]node[s]?
 ERC-20
+ESLint
 [eE]thdo
 EthSigner
 Ethereum
@@ -79,16 +81,18 @@ Kovan
 [kK]ubectl
 [lL]aunchpad
 libsodium
+Linea Voyage
 Logback
 Logrus
 Logstash
 [mM]ainnet[s]?
+Markdown
 Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
 Merkle
+Merkleroot
 MetaMask
-minikube
 MkDocs
 [mM]odify
 [mM]onitor
@@ -96,9 +100,12 @@ MkDocs
 [mM]ultikey[s]?
 [mM]ultiple
 [nN]amespace[s]?
+[nN]avbar
 Nginx
 Nodejs
 [nN]once[s]?
+npm
+nvm
 OAuth
 opBNB|opbnb
 Orion
@@ -106,7 +113,7 @@ Orion
 [pP]articipate
 Pegasys
 [pP]ermission(?:ing|ed)?
-PoA
+Photoshop
 Postgres
 PoW
 P-Chain
@@ -121,6 +128,7 @@ ReadTheDocs
 [rR]ebas(?:e|es|ing|ed)?
 Redis
 [rR]edistributable[s]?
+Redocusaurus
 [rR]eentrancy
 [rR]epurposing
 REST
@@ -140,6 +148,7 @@ Schnorr
 Slack
 Splunk
 StarkGate
+Starknet
 StarkWare
 [sS]uborganization[s]?
 Swagger
@@ -158,6 +167,7 @@ Uniswap
 [uU]pstream[s]?
 USB Armory Mk II
 [vV]aultName
+Vercel
 Vertx
 vCPU[s]?
 Web3
