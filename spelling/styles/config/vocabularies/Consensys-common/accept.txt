@@ -79,6 +79,7 @@ Kovan
 [kK]ubectl
 [lL]aunchpad
 libsodium
+Linea Voyage
 Logback
 Logrus
 Logstash
