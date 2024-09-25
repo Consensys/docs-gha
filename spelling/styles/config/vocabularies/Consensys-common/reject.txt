@@ -2,7 +2,6 @@ arithmatex
 [aA]utomagically
 [bB]lacklist[s]?
 [bB]lock[ -][cC]hain[s]?
-[cC]onsenSys|ConsenSus
 [dD]oppelgänger
 e[rR][cC][ -]20
 [eE]therum
@@ -10,7 +9,6 @@ evm
 [gG]oerli
 log[bB]ack|logBack
 log[sS]tash
-# [mM]etamask|[mM]eta[ -][mM]ask
 orion
 [pP]egaSys
 p[ -][cC]hain
