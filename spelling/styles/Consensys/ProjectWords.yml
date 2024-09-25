@@ -4,23 +4,23 @@ level: warning
 ignorecase: true
 # Attempting to override other packages' styles
 exceptions:
-    - additional
-    - additionally
-    - allow
-    - allows
-    - alternative
-    - alternatively
-    - [b]roadcast(?:ing|ed)?
-    - ensure[s]?
-    - holesky
-    - however
-    - implement[s]?
-    - is
-    - it's
-    - maximum
-    - minimum
-    - previously
-    - sufficient
-    - validator[s]?
+ - additional
+ - additionally
+ - allow
+ - allows
+ - alternative
+ - alternatively
+ - [b]roadcast(?:ing|ed)?
+ - ensure[s]?
+ - holesky
+ - however
+ - implement[s]?
+ - is
+ - it's
+ - maximum
+ - minimum
+ - previously
+ - sufficient
+ - validator[s]?
 tokens:
-    - goerli
+ - goerli
