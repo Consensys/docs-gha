@@ -4,9 +4,6 @@ name: 'lint: markdown'
 description: 'Composite action to lint markdown'
 
 inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
   CONFIG_FILE:
     description: 'markdownlint config file'
     required: false
@@ -25,7 +22,8 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
-    - uses: tj-actions/changed-files@v45
+    # 48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c = v45 as at 24092024
+    - uses: tj-actions/changed-files@48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c
       id: changed-files
       with:
         files:  ${{ inputs.FILEPATHS }}

@@ -4,9 +4,6 @@ name: 'test: spelling'
 description: 'Composite action to test spelling'
 
 inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
   FILEPATHS:
     description: 'Filepaths to look at, specified as a comma separated string ie "docs,blog,etc"'
     required: false
@@ -21,17 +18,15 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
+    # 38bf078c328061f59879b347ca344a718a736018 = v2 as at 24092024
     - name: Vale
-      uses: errata-ai/vale-action@v2
+      uses: errata-ai/vale-action@38bf078c328061f59879b347ca344a718a736018
       with:
         files: ${{ inputs.FILEPATHS }}
         separator: ","
         vale_flags: "--config .docs-gha/spelling/.vale.ini --glob={*.md,*.mdx}"
         # fail_on_error: true
         reporter: github-pr-check
-      env:
-        # Required, set by GitHub actions automatically:
-        # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
-        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+
 
      

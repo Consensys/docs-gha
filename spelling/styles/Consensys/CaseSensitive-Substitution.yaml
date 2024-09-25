@@ -1,0 +1,13 @@
+extends: substitution
+message: For component of a system, consider proper noun, %s instead of "%s"
+ignorecase: false
+level: warn
+action:
+  name: replace
+swap:
+  # Linea Coordinator system component probably proper noun
+  coordinator: Coordinator
+  # Linea Prover system component probably proper noun
+  prover: Prover
+  # Linea Voyage
+  voyage: Voyage

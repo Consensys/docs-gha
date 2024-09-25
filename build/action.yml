@@ -3,11 +3,6 @@
 name: 'build'
 description: 'Composite action to build the docs'
 
-inputs:
-  GITHUB_TOKEN:
-    description: 'Github secret Token'
-    required: true
-
 runs:
   using: "composite"
   steps:

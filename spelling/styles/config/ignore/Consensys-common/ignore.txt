@@ -1,10 +1,6 @@
-additional
-additionaly
-allow
-allows
 allowlist
 allowlists
-alternatively
+allowlisting
 api
 apis
 arbitrum
@@ -27,14 +23,8 @@ failover
 geth
 golang
 holesky
-however
-implement
-is
-it's
 linea
 liveness
-maximum
-minimum
 offchain
 onchain
 plaintext
