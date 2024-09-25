@@ -1,0 +1,9 @@
+extends: substitution
+message: "Prefer Consensys style."
+level: error
+ignorecase: true
+action:
+  name: replace
+swap:
+  ′: "'"
+  ″: '"'

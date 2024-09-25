@@ -141,6 +141,7 @@ Schnorr
 Slack
 Splunk
 StarkGate
+Starknet
 StarkWare
 [sS]uborganization[s]?
 Swagger
