@@ -10,15 +10,17 @@ exceptions:
     - allows
     - alternative
     - alternatively
-    - ensure
+    - [b]roadcast(?:ing|ed)?
+    - ensure[s]?
     - holesky
     - however
-    - implement
+    - implement[s]?
     - is
     - it's
     - maximum
     - minimum
     - previously
     - sufficient
+    - validator[s]?
 tokens:
     - goerli

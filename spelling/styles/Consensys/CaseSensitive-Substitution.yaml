@@ -1,5 +1,5 @@
 extends: substitution
-message: For system-specific term, consider %s instead of "%s"
+message: For component of a system, consider proper noun, %s instead of "%s"
 ignorecase: false
 level: warn
 action:

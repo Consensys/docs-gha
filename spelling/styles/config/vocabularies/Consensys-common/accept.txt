@@ -79,6 +79,7 @@ Kovan
 [kK]ubectl
 [lL]aunchpad
 libsodium
+Linea Voyage
 Logback
 Logrus
 Logstash
@@ -140,6 +141,7 @@ Schnorr
 Slack
 Splunk
 StarkGate
+Starknet
 StarkWare
 [sS]uborganization[s]?
 Swagger
