@@ -1,5 +1,5 @@
 extends: spelling
-message: "Did you really mean '%s'?
+message: "Did you really mean '%s'?"
 level: error
 ignore:
-	- config/Consensys-common/ignore.txt
+	- config/Consensys-common/project-words.txt
