@@ -10,7 +10,6 @@ Azure Key Vault
 BerkeleyDB
 Besu
 Bintray
-[bB]roadcast(?:ing|ed)?
 Cakeshop
 C-Chain
 Chatbot
@@ -31,6 +30,7 @@ Consensys
 [dD]esynchronization
 Divio
 Doc[tT]ools
+Docusaurus
 [dD]oppelganger[s]?
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?

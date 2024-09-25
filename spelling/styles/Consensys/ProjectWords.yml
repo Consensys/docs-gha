@@ -22,5 +22,6 @@ exceptions:
     - previously
     - sufficient
     - "validator[s]?"
+    - vercel
 tokens:
     - goerli
