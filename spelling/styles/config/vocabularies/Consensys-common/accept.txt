@@ -9,7 +9,6 @@ AWS Key Management Service
 AWS Secrets Manager
 Azure Key Vault
 BerkeleyDB
-Besu
 Bintray
 Cakeshop
 C-Chain
@@ -32,7 +31,7 @@ CSpell
 [dD]esynchronization
 Divio
 Doc[tT]ools
-Docusaurus
+[dD]ocusaurus
 [dD]oppelganger[s]?
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?
@@ -92,8 +91,8 @@ Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
 Merkle
+Merkleroot
 MetaMask
-minikube
 MkDocs
 [mM]odify
 [mM]onitor
@@ -114,7 +113,7 @@ Orion
 [pP]articipate
 Pegasys
 [pP]ermission(?:ing|ed)?
-PoA
+Photoshop
 Postgres
 PoW
 P-Chain

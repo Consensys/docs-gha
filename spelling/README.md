@@ -39,21 +39,19 @@ be compiled to this one sot.
 
 If API specs are managed as YAML files, need to test whether Vale can handle linting YAMLs.
 
-## Testing Vale Here
-
-This heading should trigger warning for non-compliance with sentence case. Metamask should upset 
-Vale too.
-
 ## ToDo
+
+### Incorporate project-words.txt from repos
+[x] Besu
+[x] Teku
 
 ### Overrides
 
 Attempted to overcome false positives with:
 
-1. /styles/ignore which references the Consensys-common/ignore.txt text file (which should override Vale.Spelling)
-2. With styles/Consensys/Overridesyaml which is a dummy extend of "existence" to allow use of an exceptions
-list {I am not convinced this is working and its not a ssot method as it will need to repeat the ignore items 
-for Vale.Spelling}
+1. /styles/ignore which references the Consensys-common/ignore.txt text file 
+2. With styles/Consensys/ProjectWords.yml which is a dummy extend of "existence" to allow use of an exceptions
+list
 
 
 
