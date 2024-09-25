@@ -21,6 +21,7 @@ exceptions:
     - minimum
     - previously
     - sufficient
+    - unversioned
     - "validator[s]?"
     - vercel
 tokens:

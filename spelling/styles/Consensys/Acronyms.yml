@@ -15,6 +15,7 @@ exceptions:
   - CLI
   - CORS
   - CPU
+  - CSS
   - CSV
   - DEBUG
   - ECDSA
@@ -40,6 +41,7 @@ exceptions:
   - JDK
   - JRE
   - JSON
+  - JSX
   - JVM
   - KMS
   - P2P

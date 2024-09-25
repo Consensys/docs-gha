@@ -1,3 +1,4 @@
+Algolia
 Ansible
 [aA]utogenerat(?:ing|ed)?
 [aA]ttester[s]?
@@ -22,6 +23,7 @@ Consensys
 [cC]ounterpart(?:y|ies)
 [cC]rafter
 [cC]ryptocurrenc(?:y|ies)
+CSpell
 [dD]app[s]?
 [dD]eauthoriz(?:e|ing)
 [dD]enylist[s]?
@@ -37,6 +39,7 @@ Docusaurus
 [eE]ndpointOverride
 [eE]node[s]?
 ERC-20
+ESLint
 [eE]thdo
 EthSigner
 Ethereum
@@ -84,6 +87,7 @@ Logback
 Logrus
 Logstash
 [mM]ainnet[s]?
+Markdown
 Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
@@ -97,9 +101,11 @@ MkDocs
 [mM]ultikey[s]?
 [mM]ultiple
 [nN]amespace[s]?
+[nN]avbar
 Nginx
 Nodejs
 [nN]once[s]?
+nvm
 OAuth
 opBNB|opbnb
 Orion
@@ -122,6 +128,7 @@ ReadTheDocs
 [rR]ebas(?:e|es|ing|ed)?
 Redis
 [rR]edistributable[s]?
+Redocusaurus
 [rR]eentrancy
 [rR]epurposing
 REST
