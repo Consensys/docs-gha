@@ -105,6 +105,7 @@ MkDocs
 Nginx
 Nodejs
 [nN]once[s]?
+npm
 nvm
 OAuth
 opBNB|opbnb
@@ -167,6 +168,7 @@ Uniswap
 [uU]pstream[s]?
 USB Armory Mk II
 [vV]aultName
+Vercel
 Vertx
 vCPU[s]?
 Web3
