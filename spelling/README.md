@@ -53,9 +53,6 @@ Attempted to overcome false positives with:
 2. With styles/Consensys/ProjectWords.yml which is a dummy extend of "existence" to allow use of an exceptions
 list
 
-
-### Let's Upset Vale
-
 ## Test This
 
 title should trigger
@@ -65,12 +62,14 @@ Should trigger
 With off brand Metamask 
   ′
   ″
-  zk-EVM
-
-Shouldn't trigger
+zk-EVM
 goerli
 Goerli
+
+Shouldn't trigger
+
 booleans
 celo
 whitelist
+
 
