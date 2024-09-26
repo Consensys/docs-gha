@@ -53,10 +53,10 @@ Attempted to overcome false positives with:
 2. With styles/Consensys/ProjectWords.yml which is a dummy extend of "existence" to allow use of an exceptions
 list
 
-
 ## Test This
 
 title should trigger
 ConsenSys should trigger
+
 
 
