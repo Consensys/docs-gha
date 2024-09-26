@@ -12,8 +12,6 @@ log[sS]tash
 orion
 [pP]egaSys
 p[ -][cC]hain
-[sS]tark[ -]Net
-[sS]tark[ -]ware
 [wW]hitelist[s]?
 x[ -][cC]hain
 [Zz][kK][ -]EVM
