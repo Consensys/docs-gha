@@ -54,9 +54,23 @@ Attempted to overcome false positives with:
 list
 
 
+### Let's Upset Vale
+
 ## Test This
 
 title should trigger
 ConsenSys should trigger
 
+Should trigger
+With off brand Metamask 
+  ′
+  ″
+  zk-EVM
+
+Shouldn't trigger
+goerli
+Goerli
+booleans
+celo
+whitelist
 

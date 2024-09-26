@@ -2,15 +2,19 @@ extends: substitution
 message: For component of a system or named entity, consider standard format, %s instead of "%s" (may not apply for start of sentence).
 ignorecase: false
 level: warning
-action:
-  name: replace
+# action:
+#   name: replace
 swap:
   # Linea Coordinator system component probably proper noun
-  coordinator: Coordinator
+  'coordinator': '"Coordinator"'
   # Linea Prover system component probably proper noun
-  prover: Prover
+  'prover': '"Prover"'
   # Linea Voyage
-  voyage: Voyage
-  besu: Besu
-  Dapp: dapp
-  [Zz][kK][ -]EVM: zkEVM
+  'voyage': '"Voyage"'
+  'besu': '"Besu"'
+  'Dapp': '"dapp"'
+  'ZKEVM': '"zkEVM"'
+  'ZK-EVM': '"zkEVM"'
+  'zk-EVM': '"zkEVM"'
+  'goerli': '"holesky", or sepolia'
+  'Goerli': '"Holesky", or Sepolia'

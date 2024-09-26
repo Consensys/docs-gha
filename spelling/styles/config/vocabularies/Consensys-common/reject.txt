@@ -6,11 +6,10 @@ arithmatex
 e[rR][cC][ -]20
 [eE]therum
 evm
-[gG]oerli
 log[bB]ack|logBack
 log[sS]tash
 orion
 [pP]egaSys
 p[ -][cC]hain
 x[ -][cC]hain
-[Zz][kK][ -]EVM
+[tT]o[ -][dD]o

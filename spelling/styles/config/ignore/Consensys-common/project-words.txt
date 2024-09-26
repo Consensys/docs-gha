@@ -9,6 +9,7 @@ arithmetization
 arity
 backoff
 be
+besu
 blockchain
 blockchains
 boolean
@@ -21,6 +22,7 @@ ensure
 etcd
 failover
 geth
+goerli
 golang
 holesky
 linea
@@ -35,6 +37,8 @@ pre
 previously
 quorum
 rest
+repo
+repos
 rollup
 rollups
 slashable
