@@ -12,4 +12,4 @@ orion
 [pP]egaSys
 p[ -][cC]hain
 x[ -][cC]hain
-[tT]o[ -][dD]o
+[Tt]o[ -]?[Dd]o

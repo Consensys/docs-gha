@@ -2,8 +2,8 @@ extends: substitution
 message: For component of a system or named entity, consider standard format, %s instead of "%s" (may not apply for start of sentence).
 ignorecase: false
 level: warning
-# action:
-#   name: replace
+action:
+  name: replace
 swap:
   # Linea Coordinator system component probably proper noun
   'coordinator': '"Coordinator"'
@@ -18,3 +18,4 @@ swap:
   'zk-EVM': '"zkEVM"'
   'goerli': '"holesky", or sepolia'
   'Goerli': '"Holesky", or Sepolia'
+
