@@ -58,6 +58,7 @@ Vale may need a parser to handle linting YAMLs (e.g., PyYAML, ruyaml). Then Upda
 ### Incorporate project-words.txt from repos
 [x] Besu
 [x] Teku
+[x] Web3Signer
 
 ## Test This
 
