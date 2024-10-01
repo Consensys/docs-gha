@@ -6,14 +6,10 @@ arithmatex
 e[rR][cC][ -]20
 [eE]therum
 evm
-[gG]oerli
 log[bB]ack|logBack
 log[sS]tash
 orion
 [pP]egaSys
 p[ -][cC]hain
-[sS]tark[ -]Net
-[sS]tark[ -]ware
-[wW]hitelist[s]?
 x[ -][cC]hain
-[Zz][kK][ -]EVM
+[Tt]o[ -]?[Dd]o
