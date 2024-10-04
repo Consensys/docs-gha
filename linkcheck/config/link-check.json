@@ -66,8 +66,8 @@
       "pattern": "^https?://www\\.hackquest\\.io/en/hackathon/Linea-Dev-Cook-Off"
     },
     {
-      "comment": "Ignore specific Android links",
-      "pattern": "^https?://developer\\.android\\.com/guide/components/(processes-and-threads#IPC|aidl)"
+      "comment": "Ignore specific Android developer links",
+      "pattern": "^https?://developer\\.android\\.com/(training/dependency-injection/hilt-android|guide/components/(processes-and-threads#IPC|aidl))"
     }
   ],
   "httpHeaders": [
