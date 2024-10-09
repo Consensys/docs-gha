@@ -18,6 +18,9 @@ exceptions:
   - CSS
   - CSV
   - DEBUG
+  - DRPC
+  - DSLA
+  - DVF
   - ECDSA
   - EIP
   - ETH

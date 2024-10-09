@@ -56,16 +56,23 @@ The [vale.ini](vale.ini) file provides various switches to turn styles on and of
 Vale may need a parser to handle linting YAMLs (e.g., PyYAML, ruyaml). Then Update the .vale.ini file to include the YAML style guide and specify the file extensions to lint.
  
 ### Incorporate project-words.txt from repos
+
+WARN -- I need to rethink this, GPT failed to compile these without loosing terms
 [x] Besu
 [x] Teku
 [x] Web3Signer
+[x] Linea
+
+? Can Josh compile them all
+
+-- started on Linea when discovered the issue
 
 ## Test This
 
 title should trigger
 ConsenSys should trigger
 
-Should trigger
+Should trigger:
 With off brand Metamask 
   ′
   ″
@@ -73,7 +80,7 @@ zk-EVM
 goerli
 Goerli
 
-Shouldn't trigger
+Shouldn't trigger:
 
 booleans
 celo
