@@ -57,15 +57,27 @@ Vale may need a parser to handle linting YAMLs (e.g., PyYAML, ruyaml). Then Upda
  
 ### Incorporate project-words.txt from repos
 
-WARN -- I need to rethink this, GPT failed to compile these without loosing terms
+Bash NOT GPT
+
+1. Compile all into one file.
 [x] Besu
 [x] Teku
 [x] Web3Signer
 [x] Linea
+[x] Infura
+[x] Docs template
+[x] metamask/gator-docs
+[x] GoQuorum
+[x] doc.tessera
+[x] ethsigner
+[x] gnark
 
-? Can Josh compile them all
-
--- started on Linea when discovered the issue
+2. Convert all into lower text (ignore is case insensitive)
+`tr '[:upper:]' '[:lower:]' < compiled.txt > progress.txt  `
+3. Retain only unique
+`grep -wo "[[:alnum:]]\+" progress.txt | sort | uniq  > uniq.txt`
+4. Alphabetical sort
+`sort -a uniq.txt > project-words.txt`
 
 ## Test This
 
@@ -84,6 +96,5 @@ Shouldn't trigger:
 
 booleans
 celo
-whitelist
 
 
