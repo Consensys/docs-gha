@@ -37,7 +37,8 @@ vale README.md
 ## Configure Vale
 
 Vale is highly customizable and the boilerplate styles may not be what you need. To override these with Consensys styles, you will probably update one of 3 locations:
-1. [projectwords](./styles/config/ignore/Consensys-common/projectwords.txt)
+
+1. [project-words](./styles/config/ignore/Consensys-common/project-words.txt)
 > [Ignore files are case insensitive](https://vale.sh/docs/topics/styles/#ignoring-non-dictionary-words), but apply all permutations of the term (all cases).
 2. [accept](./styles/config/vocabularies/Consensys-common/accept.txt)
 3. [reject](./styles/config/vocabularies/Consensys-common/reject.txt)
@@ -85,6 +86,7 @@ title should trigger
 ConsenSys should trigger
 
 Should trigger:
+
 With off brand Metamask 
   ′
   ″
@@ -92,7 +94,7 @@ zk-EVM
 goerli
 Goerli
 
-Shouldn't trigger:
+Shouldn't trigger
 
 booleans
 celo
