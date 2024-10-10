@@ -37,7 +37,7 @@ vale README.md
 ## Configure Vale
 
 Vale is highly customizable and the boilerplate styles may not be what you need. To override these with Consensys styles, you will probably update one of 3 locations:
-1. [project-words](./styles/config/ignore/Consensys-common/project-words.txt)
+1. [projectwords](./styles/config/ignore/Consensys-common/projectwords.txt)
 > [Ignore files are case insensitive](https://vale.sh/docs/topics/styles/#ignoring-non-dictionary-words), but apply all permutations of the term (all cases).
 2. [accept](./styles/config/vocabularies/Consensys-common/accept.txt)
 3. [reject](./styles/config/vocabularies/Consensys-common/reject.txt)
@@ -77,7 +77,7 @@ Bash NOT GPT
 3. Retain only unique
 `grep -wo "[[:alnum:]]\+" progress.txt | sort | uniq  > uniq.txt`
 4. Alphabetical sort
-`sort -a uniq.txt > project-words.txt`
+`sort -a uniq.txt > projectwords.txt`
 
 ## Test This
 

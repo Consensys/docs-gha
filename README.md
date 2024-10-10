@@ -11,5 +11,5 @@ ES lint ignores .md and .mdx. Need to test whether it can lint codeblocks within
 
 ### Vale
 
-[Vale](https://vale.sh/docs/) is currently [WIP for use locally and as GH action](spelling/README.md). 
+[Vale](https://vale.sh/docs/) is currently [available for use locally and as GH action](spelling/README.md). 
 
