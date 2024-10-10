@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: Apache-2.0
+---
+name: 'test: spelling'
+description: 'Composite action to test spelling'
+
+inputs:
+  FILEPATHS:
+    description: 'Filepaths to look at, specified as a comma separated string ie "docs,blog,etc"'
+    required: false
+    default: 'docs'  
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout tools repo
+      uses: actions/checkout@v4
+      with:
+        repository: Consensys/docs-gha
+        path: .docs-gha
+
+    # 38bf078c328061f59879b347ca344a718a736018 = v2 as at 24092024
+    - name: Vale
+      uses: errata-ai/vale-action@38bf078c328061f59879b347ca344a718a736018
+      with:
+        files: ${{ inputs.FILEPATHS }}
+        separator: ","
+        vale_flags: "--config .docs-gha/spelling/.vale.ini --glob={*.md,*.mdx}"
+        # fail_on_error: true
+        reporter: github-pr-check
+
+
+     
