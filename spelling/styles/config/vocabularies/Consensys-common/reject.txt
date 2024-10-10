@@ -2,11 +2,15 @@ arithmatex
 [aA]utomagically
 [bB]lacklist[s]?
 [bB]lock[ -][cC]hain[s]?
+<<<<<<< HEAD
 [cC]onsenSys|ConsenSus
+=======
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 [dD]oppelgänger
 e[rR][cC][ -]20
 [eE]therum
 evm
+<<<<<<< HEAD
 [gG]oerli
 log[bB]ack|logBack
 log[sS]tash
@@ -19,3 +23,12 @@ p[ -][cC]hain
 [wW]hitelist[s]?
 x[ -][cC]hain
 [Zz][kK][ -]EVM
+=======
+log[bB]ack|logBack
+log[sS]tash
+orion
+[pP]egaSys
+p[ -][cC]hain
+x[ -][cC]hain
+[Tt]o[ -]?[Dd]o
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a

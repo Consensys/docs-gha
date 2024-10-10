@@ -18,6 +18,13 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
+<<<<<<< HEAD
+=======
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
     # 38bf078c328061f59879b347ca344a718a736018 = v2 as at 24092024
     - name: Vale
       uses: errata-ai/vale-action@38bf078c328061f59879b347ca344a718a736018

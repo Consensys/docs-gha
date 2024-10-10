@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+Algolia
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 Ansible
 [aA]utogenerat(?:ing|ed)?
 [aA]ttester[s]?
@@ -8,9 +12,11 @@ AWS Key Management Service
 AWS Secrets Manager
 Azure Key Vault
 BerkeleyDB
-Besu
 Bintray
+<<<<<<< HEAD
 [bB]roadcast(?:ing|ed)?
+=======
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 Cakeshop
 C-Chain
 Chatbot
@@ -23,6 +29,7 @@ Consensys
 [cC]ounterpart(?:y|ies)
 [cC]rafter
 [cC]ryptocurrenc(?:y|ies)
+CSpell
 [dD]app[s]?
 [dD]eauthoriz(?:e|ing)
 [dD]enylist[s]?
@@ -31,12 +38,17 @@ Consensys
 [dD]esynchronization
 Divio
 Doc[tT]ools
+[dD]ocusaurus
 [dD]oppelganger[s]?
 [eE]ncryptor[s]?
 [eE]ncrypt(?:ing|ed)?
 [eE]ndpointOverride
 [eE]node[s]?
 ERC-20
+<<<<<<< HEAD
+=======
+ESLint
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 [eE]thdo
 EthSigner
 Ethereum
@@ -79,16 +91,25 @@ Kovan
 [kK]ubectl
 [lL]aunchpad
 libsodium
+<<<<<<< HEAD
+=======
+Linea Voyage
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 Logback
 Logrus
 Logstash
 [mM]ainnet[s]?
+Markdown
 Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
 Merkle
+Merkleroot
 MetaMask
+<<<<<<< HEAD
 minikube
+=======
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 MkDocs
 [mM]odify
 [mM]onitor
@@ -96,9 +117,12 @@ MkDocs
 [mM]ultikey[s]?
 [mM]ultiple
 [nN]amespace[s]?
+[nN]avbar
 Nginx
 Nodejs
 [nN]once[s]?
+npm
+nvm
 OAuth
 opBNB|opbnb
 Orion
@@ -106,7 +130,11 @@ Orion
 [pP]articipate
 Pegasys
 [pP]ermission(?:ing|ed)?
+<<<<<<< HEAD
 PoA
+=======
+Photoshop
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
 Postgres
 PoW
 P-Chain
@@ -121,6 +149,7 @@ ReadTheDocs
 [rR]ebas(?:e|es|ing|ed)?
 Redis
 [rR]edistributable[s]?
+Redocusaurus
 [rR]eentrancy
 [rR]epurposing
 REST
@@ -158,6 +187,7 @@ Uniswap
 [uU]pstream[s]?
 USB Armory Mk II
 [vV]aultName
+Vercel
 Vertx
 vCPU[s]?
 Web3

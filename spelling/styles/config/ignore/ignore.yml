@@ -1,5 +1,12 @@
 extends: spelling
+<<<<<<< HEAD
 message: "Did you really mean '%s'?
 level: error
 ignore:
 	- config/Consensys-common/ignore.txt
+=======
+message: "Did you really mean '%s'?"
+level: error
+ignore:
+	- config/ignore/Consensys-common/project-words.txt
+>>>>>>> 03c5276c9462b1fc9ed06be06de0dc56959ee05a
