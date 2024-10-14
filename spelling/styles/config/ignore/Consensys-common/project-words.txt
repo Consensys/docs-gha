@@ -1,7 +1,9 @@
+0x
 aaaad
 aave
 abdk
 abernathyca
+accessList
 accountkey
 accountqueue
 accum
@@ -38,6 +40,7 @@ amarok
 ankr
 anonymized
 anshul
+anyOf
 aopts
 août
 apetimism
@@ -112,6 +115,7 @@ blockchains
 blockexplorer
 blockheader
 blocklist
+blockNumber
 blockperiod
 blockperiodseconds
 blockpi
@@ -143,6 +147,7 @@ cakeshop
 callcode
 callouts
 callstack
+callTracer
 camelcase
 candillon
 cardlist
@@ -346,6 +351,10 @@ estimategas
 estree
 etcd
 ethash
+eth_call
+eth_chainId
+eth_newFilter
+eth_sendTransaction
 ethclient
 ethdo
 etherbase
@@ -392,6 +401,7 @@ février
 fienny
 filebeat
 filecoin
+filterId'
 fixeddifficulty
 flac
 fluvi
@@ -406,6 +416,7 @@ frax
 freezerdb
 fren
 frens
+fromBlock
 froms
 fromscratchistanbul
 frontends
@@ -421,6 +432,7 @@ gamification
 gamified
 gantt
 gaslessly
+gasUsed
 gcmode
 gcnodes
 gcsize
@@ -498,6 +510,7 @@ hostnames
 hoverable
 hunxh
 husain
+hydratedTransactions
 hygge
 hyperledger
 hypernative
@@ -558,6 +571,7 @@ jnacl
 jodyheavener
 joshcena
 jscodeshift
+jsonrpc
 jssdk
 jwt
 jwts
@@ -599,6 +613,7 @@ knapen
 knc
 knowledgebase
 knownhosts
+knownStates
 kotti
 koyeb
 kubeconfig
@@ -696,6 +711,7 @@ microdata
 middlewares
 mimc
 minerthreads
+miner_stop
 minifier
 mintable
 mintair
@@ -748,8 +764,10 @@ netrc
 netrestrict
 networkid
 networknt
+newHeads
 newkey
 newnode
+newPending
 nextra
 nftscan
 ngryman
@@ -828,6 +846,7 @@ paletton
 palo
 pancakeswap
 paraiso
+params
 particpate
 partyinfo
 passout
@@ -866,6 +885,7 @@ plushies
 pnpm
 poap
 polkadot
+pollable
 polygon
 ponly
 postbot
@@ -916,6 +936,7 @@ pubkey
 pubkeys
 publickey
 puppeth
+pulledStates
 pushgateway
 pwdout
 pwds
@@ -1178,12 +1199,15 @@ tload
 tlskeystore
 tlstruststore
 tmpdir
+toBlock
 tokenomics
 tomestone
 toolset
 toplevel
 tplh
 tpms
+tracerConfig
+tracerOptions
 transifex
 transpiles
 treeified
@@ -1206,6 +1230,7 @@ tstore
 twap
 twistededwards
 twoslash
+tx
 txfeecap
 txhash
 txnode
@@ -1222,6 +1247,7 @@ uncompress
 undergreen
 unflat
 unifra
+uint
 unist
 unlinkable
 unlisteds
@@ -1327,6 +1353,7 @@ yetf
 yhusb
 ynnfyvwcqev
 yourcode
+yParity
 yrbjp
 yubi
 yubihsm
