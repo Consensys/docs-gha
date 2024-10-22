@@ -13,9 +13,11 @@ swap:
   'voyage': '"Voyage"'
   'besu': '"Besu"'
   'Dapp': '"dapp"'
+  'ZK EVM': '"zkEVM"'
   'ZKEVM': '"zkEVM"'
   'ZK-EVM': '"zkEVM"'
   'zk-EVM': '"zkEVM"'
+  'zk EVM': '"zkEVM"'
   'goerli': '"holesky", or sepolia'
   'Goerli': '"Holesky", or Sepolia'
 

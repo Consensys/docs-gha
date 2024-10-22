@@ -162,7 +162,8 @@ tmux
 [tT]ruststore[s]?
 [uU]nderflow[s]?
 [uU]encrypt(?:ing|ed)?
-Uniswap
+[uU]niswap
+[uU]nichain
 [uU]nmarshal(?:ing|ed)?
 [uU]pstream[s]?
 USB Armory Mk II
