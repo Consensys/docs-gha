@@ -48,15 +48,13 @@ Vale is highly customizable and the boilerplate styles may not be what you need.
 
 Finally, there are more nuanced Consensys-specific styles such as substitutions, acronym overrides, and other configurations in the [Consensys Style folder](./styles/Consensys).
 
-The [vale.ini](vale.ini) file provides various switches to turn styles on and off and to set what file types are formatted. Furthermore, as part of the GHA, the downstream repos that use this can specify which folders Vale may lint.
-
-## To do
+The [vale.ini](.vale.ini) file provides various switches to turn styles on and off and to set what file types are formatted. Furthermore, as part of the GHA, the downstream repos that use this can specify which folders Vale may lint.
 
 ## Vale and YAML
 
-Vale might need a parser to handle linting YAMLs (e.g., PyYAML, ruyaml). Then update the `.vale.ini` file to include the YAML style guide and specify the file extensions to lint.
+Vale needs a parser to handle linting YAMLs. This is (possibly/probably) why there is an additional ini file [vale-star.ini](vale-star.ini).
  
-### Incorporate `project-words.txt` from repos
+### Incorporated `project-words.txt` from repos
 
 Bash NOT GPT
 
@@ -82,19 +80,12 @@ Bash NOT GPT
 
 ## Test this
 
-title should trigger
 ConsenSys should trigger
 
 Should trigger:
 
 With off brand Metamask 
-  ′
-  ″
-zk-EVM
-goerli
-Goerli
-on-chain
-
+ 
 Shouldn't trigger
 
 booleans
