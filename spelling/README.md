@@ -93,6 +93,7 @@ With off brand Metamask
 zk-EVM
 goerli
 Goerli
+on-chain
 
 Shouldn't trigger
 

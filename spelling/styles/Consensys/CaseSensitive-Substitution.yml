@@ -1,5 +1,5 @@
 extends: substitution
-message: For component of a system or named entity, consider standard format, %s instead of "%s" (may not apply for start of sentence).
+message: Consider standard format, %s instead of "%s" (may not apply for start of sentence).
 ignorecase: false
 level: warning
 action:
@@ -13,9 +13,14 @@ swap:
   'voyage': '"Voyage"'
   'besu': '"Besu"'
   'Dapp': '"dapp"'
+  'goerli': '"holesky", or sepolia'
+  'Goerli': '"Holesky", or Sepolia'
+  'on-chain': 'onchain'
+  'On-chain': 'Onchain'
+  'ZK EVM': '"zkEVM"'
   'ZKEVM': '"zkEVM"'
   'ZK-EVM': '"zkEVM"'
   'zk-EVM': '"zkEVM"'
-  'goerli': '"holesky", or sepolia'
-  'Goerli': '"Holesky", or Sepolia'
+  'zk EVM': '"zkEVM"'
+
 
