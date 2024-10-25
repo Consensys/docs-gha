@@ -17,6 +17,8 @@ swap:
   'Goerli': '"Holesky", or Sepolia'
   'on-chain': 'onchain'
   'On-chain': 'Onchain'
+  'on chain': 'onchain'
+  'On chain': 'Onchain'
   'ZK EVM': '"zkEVM"'
   'ZKEVM': '"zkEVM"'
   'ZK-EVM': '"zkEVM"'

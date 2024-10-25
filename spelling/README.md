@@ -18,7 +18,7 @@ From the spelling directory (where the vale.ini file is held):
 vale sync
 ```
 
-> Microsoft is sourced from https://github.com/errata-ai/Microsoft
+> Microsoft is sourced from https://github.com/errata-ai/Microsoft.
 
 2. 
 
@@ -33,6 +33,8 @@ b) Or pass Vale the path to the file you want to lint, e.g. lint this file with:
 ```bash
 vale README.md
 ```
+
+You may configure Vale to work [globally and locally](https://docs-template.consensys.io/contribute/run-vale#run-locally) or integrate it with [VS Code](https://docs-template.consensys.io/contribute/run-vale#use-the-vs-code-integration).
 
 ## Configure Vale
 
@@ -50,45 +52,10 @@ Finally, there are more nuanced Consensys-specific styles such as substitutions,
 
 The [vale.ini](.vale.ini) file provides various switches to turn styles on and off and to set what file types are formatted. Furthermore, as part of the GHA, the downstream repos that use this can specify which folders Vale may lint.
 
+Learn more about the [Consensys Style](https://docs-template.consensys.io/contribute/style-guide).
+
 ## Vale and YAML
 
 Vale needs a parser to handle linting YAMLs. This is (possibly/probably) why there is an additional ini file [vale-star.ini](vale-star.ini).
  
-### Incorporated `project-words.txt` from repos
-
-Bash NOT GPT
-
-1. Compile all into one file.
-   [x] Besu
-   [x] Teku
-   [x] Web3Signer
-   [x] Linea
-   [x] Infura
-   [x] Docs template
-   [x] metamask/gator-docs
-   [x] GoQuorum
-   [x] doc.tessera
-   [x] ethsigner
-   [x] gnark
-
-2. Convert all into lower text (ignore is case insensitive)
-   `tr '[:upper:]' '[:lower:]' < compiled.txt > progress.txt`
-3. Retain only unique
-   `grep -wo "[[:alnum:]]\+" progress.txt | sort | uniq  > uniq.txt`
-4. Alphabetical sort
-   `sort -a uniq.txt > projectwords.txt`
-
-## Test this
-
-ConsenSys should trigger
-
-Should trigger:
-
-With off brand Metamask 
- 
-Shouldn't trigger
-
-booleans
-celo
-
 
