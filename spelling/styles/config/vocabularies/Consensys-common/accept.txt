@@ -110,6 +110,7 @@ OAuth
 opBNB|opbnb
 Orion
 [pP]arallelization
+paramStructure
 [pP]articipate
 Pegasys
 [pP]ermission(?:ing|ed)?
