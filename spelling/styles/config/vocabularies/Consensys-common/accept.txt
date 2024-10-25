@@ -172,9 +172,9 @@ USB Armory Mk II
 Vercel
 Vertx
 vCPU[s]?
-Web3
+web3
 Web3Signer
-Wei
+wei
 [wW]ithdrawable
 X-Chain
 [yY]aml|YAML
