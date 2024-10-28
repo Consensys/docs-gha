@@ -56,4 +56,4 @@ Learn more about the [Consensys Style](https://docs-template.consensys.io/contri
 
 ## Vale and YAML
 
-Vale needs a parser to handle linting YAMLs. This is (possibly/probably) why there is an additional ini file [vale-star.ini](vale-star.ini).
+In the strict sense vale doesn't parse yaml or json, however, there is a fall through case where it handles files (anything) as text. This is used with the [vale-star.ini](vale-star.ini).
