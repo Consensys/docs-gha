@@ -18,7 +18,7 @@ From the spelling directory (where the vale.ini file is held):
 vale sync
 ```
 
-> Microsoft is sourced from https://github.com/errata-ai/Microsoft
+> Microsoft is sourced from https://github.com/errata-ai/Microsoft.
 
 2. 
 
@@ -34,6 +34,8 @@ b) Or pass Vale the path to the file you want to lint, e.g. lint this file with:
 vale README.md
 ```
 
+You may configure Vale to work [globally and locally](https://docs-template.consensys.io/contribute/run-vale#run-locally) or integrate it with [VS Code](https://docs-template.consensys.io/contribute/run-vale#use-the-vs-code-integration).
+
 ## Configure Vale
 
 Vale is highly customizable and the boilerplate styles may not be what you need. To override these with Consensys styles, you will probably update one of 3 locations:
@@ -48,56 +50,10 @@ Vale is highly customizable and the boilerplate styles may not be what you need.
 
 Finally, there are more nuanced Consensys-specific styles such as substitutions, acronym overrides, and other configurations in the [Consensys Style folder](./styles/Consensys).
 
-The [vale.ini](vale.ini) file provides various switches to turn styles on and off and to set what file types are formatted. Furthermore, as part of the GHA, the downstream repos that use this can specify which folders Vale may lint.
+The [vale.ini](.vale.ini) file provides various switches to turn styles on and off and to set what file types are formatted. Furthermore, as part of the GHA, the downstream repos that use this can specify which folders Vale may lint.
 
-## To do
+Learn more about the [Consensys Style](https://docs-template.consensys.io/contribute/style-guide).
 
 ## Vale and YAML
 
-Vale might need a parser to handle linting YAMLs (e.g., PyYAML, ruyaml). Then update the `.vale.ini` file to include the YAML style guide and specify the file extensions to lint.
- 
-### Incorporate `project-words.txt` from repos
-
-Bash NOT GPT
-
-1. Compile all into one file.
-   [x] Besu
-   [x] Teku
-   [x] Web3Signer
-   [x] Linea
-   [x] Infura
-   [x] Docs template
-   [x] metamask/gator-docs
-   [x] GoQuorum
-   [x] doc.tessera
-   [x] ethsigner
-   [x] gnark
-
-2. Convert all into lower text (ignore is case insensitive)
-   `tr '[:upper:]' '[:lower:]' < compiled.txt > progress.txt`
-3. Retain only unique
-   `grep -wo "[[:alnum:]]\+" progress.txt | sort | uniq  > uniq.txt`
-4. Alphabetical sort
-   `sort -a uniq.txt > projectwords.txt`
-
-## Test this
-
-title should trigger
-ConsenSys should trigger
-
-Should trigger:
-
-With off brand Metamask 
-  ′
-  ″
-zk-EVM
-goerli
-Goerli
-on-chain
-
-Shouldn't trigger
-
-booleans
-celo
-
-
+In the strict sense vale doesn't parse yaml or json, however, there is a fall through case where it handles files (anything) as text. This is used with the [vale-star.ini](vale-star.ini).

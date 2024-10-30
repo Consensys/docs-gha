@@ -88,6 +88,7 @@ availabile
 avax
 axelar
 axelarscan
+axios
 azuredeploy
 azurerm
 backoff
@@ -359,6 +360,7 @@ ethclient
 ethdo
 etherbase
 ethereumj
+ethers
 etherspot
 ethersproject
 ethersv

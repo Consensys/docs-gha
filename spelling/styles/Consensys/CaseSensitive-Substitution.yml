@@ -15,8 +15,12 @@ swap:
   'Dapp': '"dapp"'
   'goerli': '"holesky", or sepolia'
   'Goerli': '"Holesky", or Sepolia'
+  # tested but this apparently failed to be handled with [Oo]nchain in accept
   'on-chain': 'onchain'
   'On-chain': 'Onchain'
+  'on chain': 'onchain'
+  'On chain': 'Onchain'
+  # this may be handled just by putting zkEVM into accept {need to test}
   'ZK EVM': '"zkEVM"'
   'ZKEVM': '"zkEVM"'
   'ZK-EVM': '"zkEVM"'
