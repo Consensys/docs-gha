@@ -22,6 +22,12 @@ runs:
       with:
         python-version: '3.12'
 
+    - name: Install Python Dependencies
+      shell: bash  # Specify the shell to avoid missing property error
+      run: |
+        python -m pip install --upgrade pip
+        pip install docutils asciidoctor
+
     # 38bf078c328061f59879b347ca344a718a736018 = v2 as at 24092024
     - name: Vale
       uses: errata-ai/vale-action@38bf078c328061f59879b347ca344a718a736018
@@ -31,6 +37,3 @@ runs:
         vale_flags: "--config .docs-gha/spelling/.vale.ini --glob={*.md,*.mdx}"
         # fail_on_error: true
         reporter: github-pr-check
-
-
-     
