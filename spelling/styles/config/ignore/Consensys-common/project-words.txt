@@ -82,7 +82,6 @@ atticc
 attnets
 aurorascan
 authkey
-authorization
 authpath
 autoconverted
 autodetection
@@ -749,7 +748,7 @@ meeet
 mello
 mélen
 memoize
-memozing
+memoizing
 mendi
 meok
 meotherdomain
