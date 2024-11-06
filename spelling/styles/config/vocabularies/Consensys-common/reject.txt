@@ -5,11 +5,9 @@ arithmatex
 [dD]oppelgänger
 e[rR][cC][ -]20
 [eE]therum
-evm
 log[bB]ack|logBack
 log[sS]tash
 orion
 [pP]egaSys
 p[ -][cC]hain
 x[ -][cC]hain
-[Tt]o[ -]?[Dd]o

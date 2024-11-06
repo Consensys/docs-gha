@@ -7,35 +7,77 @@ match: $sentence
 indicators:
   - ':'
 exceptions:
+  - ABI
+  - Account Management API
+  - Android
   - API
+  - APIs
   - AWS
   - Azure
   - Besu
+  - Binance Smart Chain
   - BLS
+  - BNB Chain
+  - Caddy
+  - Chain Methods API
   - CLI
   - Code
   - Consensys
   - Cosmos
+  - CSP
+  - curl
   - Docker
+  - ECMAScript
+  - EIP
+  - Electron
   - Emmet
+  - EOA
+  - ERC
   - ETH
   - Ethereum
   - EthSigner
+  - EVM
+  - FAQs
+  - Flask
   - GoQuorum
   - Hashicorp
+  - HTTP
+  - HTTPS
   - Hyperledger
+  - ID
+  - IPFS
+  - JavaScript
   - JSON
+  - JSX
+  - JWTs
   - KMS
   - Kubernetes
   - Linux
   - macOS
   - Marketplace
+  - MetaMask
+  - MetaMask Mobile
+  - MIPD
   - MongoDB
+  - Next.js
+  - NFT
+  - NFTs
+  - Node.js
+  - PoS
+  - Python
   - Quorum
   - Orion
   - PegaSys
   - PostgreSQL
+  - React
+  - React Native
   - RPC
+  - Rust
+  - SDK
+  - SES
+  - Snap
+  - Snaps
+  - Snap's
   - Studio
   - Swagger
   - TOML
@@ -43,10 +85,17 @@ exceptions:
   - TLS
   - TypeScript
   - UI
+  - Unity
   - URLs
+  - UX
+  - Vanilla JS
   - Vault
+  - ViewModel
   - Visual
   - VS
+  - Wallet API
+  - WebSockets
   - Windows
   - YAML
   - YML
+  - 2FA

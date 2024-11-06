@@ -25,6 +25,7 @@ Consensys
 CSpell
 [dD]app[s]?
 [dD]eauthoriz(?:e|ing)
+[dD]eeplink(?:s|ing)?
 [dD]enylist[s]?
 [dD]eserializ(?:e|ing)
 [dD]eserialization
@@ -102,11 +103,12 @@ MkDocs
 [nN]amespace[s]?
 [nN]avbar
 Nginx
-Nodejs
+Node.js
 [nN]once[s]?
 npm
 nvm
 OAuth
+[oO]nboard(?:s|ing|ed)?
 opBNB|opbnb
 Orion
 [pP]arallelization
@@ -114,6 +116,7 @@ paramStructure
 [pP]articipate
 Pegasys
 [pP]ermission(?:ing|ed)?
+[pP]repend(?:s|ing|ed)?
 Photoshop
 Postgres
 PoW
@@ -133,6 +136,7 @@ Redocusaurus
 [rR]eentrancy
 [rR]epurposing
 REST
+rest
 Rinkeby
 Roboto
 Ropsten
@@ -149,7 +153,7 @@ Schnorr
 Slack
 Splunk
 StarkGate
-Starknet
+[sS]tarknet
 StarkWare
 [sS]uborganization[s]?
 Swagger
@@ -172,7 +176,7 @@ USB Armory Mk II
 Vercel
 Vertx
 vCPU[s]?
-web3
+[wW]eb3
 Web3Signer
 wei
 [wW]ithdrawable
