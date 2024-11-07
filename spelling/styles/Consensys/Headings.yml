@@ -18,11 +18,13 @@ exceptions:
   - Binance Smart Chain
   - BLS
   - BNB Chain
+  - BNB Smart Chain
   - Caddy
   - Chain Methods API
   - CLI
   - Code
   - Consensys
+  - Content Security Policy
   - Cosmos
   - CSP
   - curl
@@ -35,20 +37,26 @@ exceptions:
   - ERC
   - ETH
   - Ethereum
+  - Ethers.js
   - EthSigner
   - EVM
   - FAQs
   - Flask
+  - Go
   - GoQuorum
+  - Hardhat
   - Hashicorp
+  - HTML
   - HTTP
   - HTTPS
   - Hyperledger
+  - I
   - ID
   - IPFS
   - JavaScript
   - JSON
   - JSX
+  - JWT
   - JWTs
   - KMS
   - Kubernetes
@@ -57,16 +65,18 @@ exceptions:
   - Marketplace
   - MetaMask
   - MetaMask Mobile
-  - MIPD
+  - MIPD Store
   - MongoDB
   - Next.js
   - NFT
   - NFTs
+  - Node Fetch
   - Node.js
   - PoS
   - Python
   - Quorum
   - Orion
+  - Palm
   - PegaSys
   - PostgreSQL
   - React

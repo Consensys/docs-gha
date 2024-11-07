@@ -367,6 +367,7 @@ ensip
 ensure
 entrypoints
 enum
+enums
 envio
 envr
 eoas
@@ -456,6 +457,7 @@ frax
 freezerdb
 fren
 frens
+fri
 fromBlock
 froms
 fromscratchistanbul
@@ -484,6 +486,7 @@ genkeypair
 getbalance
 getfeedback
 geth
+geth's
 getopts
 gettransactionexclusionstatusv
 gettransactionstatus
@@ -1423,6 +1426,7 @@ websigner
 websocket
 websockets
 westus
+wget
 wolcott
 word
 workdir
