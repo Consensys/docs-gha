@@ -135,8 +135,6 @@ Redis
 Redocusaurus
 [rR]eentrancy
 [rR]epurposing
-REST
-rest
 Rinkeby
 Roboto
 Ropsten
@@ -151,6 +149,7 @@ Ropsten
 [sS]essionToken
 Schnorr
 Slack
+Socket.IO
 Splunk
 StarkGate
 [sS]tarknet
