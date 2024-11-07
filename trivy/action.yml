@@ -3,6 +3,17 @@
 name: 'Trivy'
 description: 'Composite action to run trivy on the npm package.json'
 
+
+inputs:
+  TRIVY_SKIP_DB_UPDATE:
+    description: "Whether trivy should use cache instead of pulling latest db"
+    required: false
+    default: true
+  TRIVY_SKIP_JAVA_DB_UPDATE:
+    description: "Whether trivy should use cache instead of pulling latest java db"
+    required: false
+    default: true
+
 runs:
   using: "composite"
   steps:
@@ -12,15 +23,20 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
-    # 0.23.0
+    # 0.28.0
+    # Refer to https://github.com/aquasecurity/trivy-action#updating-caches-in-the-default-branch for the env vars 
     - name: Run Trivy vulnerability scanner
-      uses: aquasecurity/trivy-action@6e7b7d1fd3e4fef0c5fa8cce1229c54b2c9bd0d8
+      uses: aquasecurity/trivy-action@915b19bbe73b92a6cf82a1bc12b087c9a19a5fe2
       with:
         scan-type: 'fs'
         ignore-unfixed: true
         format: 'sarif'
         output: 'trivy-results.sarif'
         severity: 'CRITICAL'
+        cache: 'true'
+      env:
+        TRIVY_SKIP_DB_UPDATE: ${{ inputs.TRIVY_SKIP_DB_UPDATE && inputs.TRIVY_SKIP_DB_UPDATE != 'false' }}
+        TRIVY_SKIP_JAVA_DB_UPDATE: ${{ inputs.TRIVY_SKIP_JAVA_DB_UPDATE && inputs.TRIVY_SKIP_JAVA_DB_UPDATE != 'false' }}
 
     - name: Upload Trivy scan results to GitHub Security tab
       uses: github/codeql-action/upload-sarif@v3
