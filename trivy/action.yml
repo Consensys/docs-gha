@@ -25,7 +25,9 @@ runs:
 
     # 0.29.0
     # Refer to https://github.com/aquasecurity/trivy-action#updating-caches-in-the-default-branch for the env vars 
-    # also uses aquasecurity/setup-trivy@v0.2.2 / aquasecurity/setup-trivy@ff1b8b060f23b650436d419b5e13f67f5d4c3087
+    # also uses aquasecurity/setup-trivy@v0.2.2 
+    # For MM you need to submit the hash for trivy-action and the VERSION (not hash) of setup-trivy. `setup-trivy` is slurped 
+    # in via trivy-action and a hash won't work (maybe this is a bug with GH?) 
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@18f2510ee396bbf400402947b394f2dd8c87dbb0
       with:
