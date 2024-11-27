@@ -9,6 +9,7 @@ indicators:
 exceptions:
   - ABI
   - Account Management API
+  - Alchemy
   - Android
   - API
   - APIs
@@ -28,6 +29,7 @@ exceptions:
   - Cosmos
   - CSP
   - curl
+  - DipDup
   - Docker
   - ECMAScript
   - EIP
@@ -60,6 +62,9 @@ exceptions:
   - JWTs
   - KMS
   - Kubernetes
+  - L1
+  - L2
+  - Linea
   - Linux
   - macOS
   - Marketplace
@@ -79,22 +84,28 @@ exceptions:
   - Palm
   - PegaSys
   - PostgreSQL
+  - Pyth
   - React
   - React Native
+  - Reservoir
+  - ReservoirKit
   - RPC
   - Rust
   - SDK
+  - Secret
   - SES
   - Snap
   - Snaps
   - Snap's
   - Studio
   - Swagger
+  - Tellor
   - TOML
   - REPL
   - TLS
   - TypeScript
   - UI
+  - Umbrella Network
   - Unity
   - URLs
   - UX
