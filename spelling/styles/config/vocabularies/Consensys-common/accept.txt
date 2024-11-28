@@ -30,7 +30,6 @@ Consensys
 [cC]rypto
 [cC]ryptocurrenc(?:y|ies)
 CSpell
-cURL
 [cC]yber
 [cC]ybersecurity
 [dD]app[s]?
