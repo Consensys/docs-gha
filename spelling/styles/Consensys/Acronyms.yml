@@ -11,12 +11,14 @@ exceptions:
   - AWS
   - BLS
   - BTC
+  - CEX
   - CLA
   - CLI
   - CORS
   - CPU
   - CSS
   - CSV
+  - DAO
   - DEBUG
   - DRPC
   - DSLA
@@ -28,6 +30,7 @@ exceptions:
   - ES
   - GCP
   - GET
+  - GPT
   - GPU
   - gRPC
   - GTag
@@ -48,6 +51,7 @@ exceptions:
   - JSX
   - JVM
   - KMS
+  - KPI
   - P2P
   - PATH
   - PBFT
@@ -64,6 +68,7 @@ exceptions:
   - SDK
   - SECP
   - SHA
+  - SLA
   - SQL
   - SSH
   - SSL
