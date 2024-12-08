@@ -13,6 +13,9 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
+    - name: Setup oras
+      uses: oras-project/setup-oras@v1
+        
     - name: Get current date
       id: date
       shell: sh      
