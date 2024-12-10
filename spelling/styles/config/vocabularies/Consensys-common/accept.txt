@@ -165,6 +165,7 @@ Redocusaurus
 [rR]eentrancy
 [rR]elayer
 [rR]epurposing
+[rR]estak(?:e|es|ing|ed)?
 Rinkeby
 Roboto
 Ropsten
@@ -193,6 +194,7 @@ StarkWare
 [sS]uborganization[s]?
 Supra
 Swagger
+Swellchain
 Tasklist
 Teku
 Telegraf
