@@ -113,6 +113,7 @@ Markdown
 Markdownlint
 [mM]arshal(?:ing|ed)?
 Medalla
+[Mm]empool
 Merkle
 Merkleroot
 MetaMask
@@ -126,6 +127,7 @@ Mobula
 [mM]ultisig(?:s|nature)?
 [nN]amespace[s]?
 [nN]avbar
+Nethermind
 Nginx
 Node.js
 [nN]once[s]?
@@ -135,6 +137,7 @@ OAuth
 Octoflow
 [oO]nboard(?:s|ing|ed)?
 opBNB|opbnb
+OpenSea
 [oO]rderbook[s]?
 Orion
 PADO
@@ -144,6 +147,7 @@ paramStructure
 Pegasys
 [pP]ermission(?:ing|ed)?
 [pP]repend(?:s|ing|ed)?
+[Pp]recompile[s]?
 Photoshop
 Postgres
 PoW
