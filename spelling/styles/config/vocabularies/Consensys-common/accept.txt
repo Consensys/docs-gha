@@ -73,7 +73,7 @@ GoQuorum
 Gradle
 Grafana
 gRPC
-G?Wei
+G?wei
 Hashi[cC]orp
 Helmfile
 Hexagate
@@ -224,7 +224,6 @@ Vertx
 vCPU[s]?
 [wW]eb3
 Web3Signer
-wei
 [wW]ithdrawable
 X-Chain
 [yY]aml|YAML
