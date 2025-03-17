@@ -22,8 +22,8 @@ runs:
         repository: Consensys/docs-gha
         path: .docs-gha
 
-    # 48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c = v45 as at 24092024
-    - uses: tj-actions/changed-files@48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c
+    # 2f7c5bfce28377bc069a65ba478de0a74aa0ca32 = v46.0.1 as at 18032025
+    - uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32
       id: changed-files
       with:
         files:  ${{ inputs.FILEPATHS }}
