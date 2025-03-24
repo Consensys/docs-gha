@@ -50,6 +50,7 @@ Doc[tT]ools
 [eE]ncrypt(?:ing|ed)?
 [eE]ndpointOverride
 [eE]node[s]?
+[Ee]phemery
 ERC-20
 Erigon
 ESLint
@@ -78,6 +79,7 @@ Hashi[cC]orp
 Helmfile
 Hexagate
 Homebrew
+[Hh]oodi
 [hH]ostname[s]?
 HSM[s]?
 Hyperledger
