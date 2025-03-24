@@ -1125,6 +1125,7 @@ scopechat
 scopescan
 scriptable
 scry
+sdks
 sdk's
 searchbar
 sebastien
